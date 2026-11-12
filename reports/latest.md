@@ -1,11 +1,11 @@
 # Collection report
 
-Updated: 2026-11-12T12:57:21+00:00
+Updated: 2026-11-12T13:05:47+00:00
 
 - Accounts checked: 34
 - Stories in archive: 2301
 - Photos in archive: 2313
-- Stories with their full photo set: 1 (collected by hand: 0)
+- Stories with their full photo set: 1 (collected by hand: 1)
 - Stories with cover photo only (story page not accessible): 2300
 - Translations / duplicates removed: 716
 

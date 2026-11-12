@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T12:57:21+00:00",
+ "updated": "2026-11-12T13:05:47+00:00",
  "totals": {
   "accounts": 34,
   "stories": 2301,
@@ -7,7 +7,7 @@
   "fullPhotoSets": 1,
   "coverOnly": 2300,
   "duplicatesRemoved": 716,
-  "collectedByHand": 0
+  "collectedByHand": 1
  },
  "sites": [
   {
@@ -289,7 +289,8 @@
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
-   ]
+   ],
+   "manual": 1
   },
   {
    "account": "pnudperu",
