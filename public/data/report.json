@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-05T15:51:13+00:00",
+ "updated": "2026-11-12T12:52:31+00:00",
  "totals": {
   "accounts": 34,
-  "stories": 2296,
-  "photos": 2308,
+  "stories": 2301,
+  "photos": 2313,
   "fullPhotoSets": 1,
-  "coverOnly": 2295,
-  "duplicatesRemoved": 715,
-  "collectedByHand": 1
+  "coverOnly": 2300,
+  "duplicatesRemoved": 716,
+  "collectedByHand": 0
  },
  "sites": [
   {
@@ -28,9 +28,9 @@
    "office": "UNDP Arab States",
    "url": "https://undparabic.exposure.co/",
    "status": "ok",
-   "stories": 113,
+   "stories": 114,
    "fullPhotoSets": 0,
-   "coverOnly": 113,
+   "coverOnly": 114,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -94,9 +94,9 @@
    "office": "UNDP China",
    "url": "https://undpinchina.exposure.co/",
    "status": "ok",
-   "stories": 57,
+   "stories": 58,
    "fullPhotoSets": 0,
-   "coverOnly": 57,
+   "coverOnly": 58,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.",
@@ -109,9 +109,9 @@
    "office": "PNUD Colombia",
    "url": "https://pnudcolombia.exposure.co/",
    "status": "ok",
-   "stories": 238,
+   "stories": 239,
    "fullPhotoSets": 0,
-   "coverOnly": 238,
+   "coverOnly": 239,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -289,8 +289,7 @@
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
-   ],
-   "manual": 1
+   ]
   },
   {
    "account": "pnudperu",
@@ -324,9 +323,9 @@
    "office": "UNDP Sri Lanka",
    "url": "https://undpsrilanka.exposure.co/",
    "status": "ok",
-   "stories": 243,
+   "stories": 244,
    "fullPhotoSets": 0,
-   "coverOnly": 243,
+   "coverOnly": 244,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -363,9 +362,9 @@
    "office": "UNDP Ukraine",
    "url": "https://undpukraine.exposure.co/",
    "status": "ok",
-   "stories": 255,
+   "stories": 257,
    "fullPhotoSets": 0,
-   "coverOnly": 255,
+   "coverOnly": 257,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -2254,6 +2253,12 @@
    "title": "#GivingTuesday ETKİNLİĞİ",
    "url": "https://undpturkiye.exposure.co/givingtuesday-1",
    "keptInstead": "https://undpturkiye.exposure.co/givingtuesday"
+  },
+  {
+   "id": "undpukraine/derevo-zhyttia",
+   "title": "Дерево життя",
+   "url": "https://undpukraine.exposure.co/derevo-zhyttia",
+   "keptInstead": "https://undpukraine.exposure.co/tree-of-life"
   },
   {
    "id": "undpukraine/hochu-daty-molodi-vidschuttia-bezteky-i-viry-v-sebe",
