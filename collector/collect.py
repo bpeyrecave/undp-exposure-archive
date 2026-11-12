@@ -288,7 +288,6 @@ def main():
                 story["title"] = hand.get("title") or story["title"]
                 story["date"] = hand.get("date") or story["date"]
                 story["credits"] = hand.get("credits")
-                site["manual"] = site.get("manual", 0) + 1
 
             if not story["images"] and story["cover"]:
                 story["images"] = [{"src": story["cover"], "alt": ""}]
@@ -311,6 +310,8 @@ def main():
                 continue
             stories.append(story)
             site["stories"] += 1
+            if hand and story["photoSet"] == "full" and story["images"] == hand["photos"]:
+                site["manual"] = site.get("manual", 0) + 1
             site["fullPhotoSets" if story["photoSet"] == "full" else "coverOnly"] += 1
         print(f"   {site['stories']} stories, {site['fullPhotoSets']} full photo sets, {site['blockedPages']} blocked pages", flush=True)
 
