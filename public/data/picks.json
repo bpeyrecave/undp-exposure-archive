@@ -1,1 +1,532 @@
-{"collections":[],"picks":[]}
+{
+ "updated": "2026-11-12T15:01:16.754Z",
+ "collections": [
+  {
+   "id": "portraits",
+   "name": "Portraits"
+  },
+  {
+   "id": "photos-of-the-year",
+   "name": "Photos of the Year"
+  },
+  {
+   "id": "nature-sustainability",
+   "name": "Nature & Sustainability"
+  },
+  {
+   "id": "landscapes",
+   "name": "Landscapes"
+  },
+  {
+   "id": "undp-in-the-field",
+   "name": "UNDP in the Field"
+  },
+  {
+   "id": "crisis",
+   "name": "Crisis"
+  },
+  {
+   "id": "sdgs",
+   "name": "SDGs"
+  },
+  {
+   "id": "livelihoods",
+   "name": "Livelihoods"
+  },
+  {
+   "id": "cooking-fuel",
+   "name": "Cooking Fuel"
+  },
+  {
+   "id": "water",
+   "name": "Water"
+  }
+ ],
+ "picks": [
+  {
+   "src": "https://exposure.accelerator.net/production/posts/4994388/cover-photo/cover-1791190927.jpeg",
+   "alt": "",
+   "storyId": "undparabic/women-entrepreneurs-in-gaza-sustaining-livelihoods-amid-crisis",
+   "storyTitle": "Women Entrepreneurs in Gaza: Sustaining Livelihoods Amid Crisis",
+   "storyUrl": "https://undparabic.exposure.co/women-entrepreneurs-in-gaza-sustaining-livelihoods-amid-crisis",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-10-05",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T15:01:10.712Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/uq79kvmtwqeac0mp8fw88guzqt17789w4l9y/original.jpg",
+   "alt": "Two children crouch smiling beside a young seedling in a black pot, with rows of tree saplings and a green watering can behind them.",
+   "storyId": "undpsrilanka/meaning-in-every-drop",
+   "storyTitle": "Meaning in Every Drop",
+   "storyUrl": "https://undpsrilanka.exposure.co/meaning-in-every-drop",
+   "office": "UNDP Sri Lanka",
+   "location": "Sri Lanka",
+   "region": "RBAP",
+   "date": "2026-10-12",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "nature-sustainability"
+   ],
+   "addedAt": "2026-11-12T15:00:53.229Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/4vxkm6whj3jr4l5garr2bgut1pfd5r58au53/original.jpg",
+   "alt": "Two cupped hands hold a small handful of bright red chili peppers with green stems, with a blue shirt sleeve visible above.",
+   "storyId": "undpsrilanka/meaning-in-every-drop",
+   "storyTitle": "Meaning in Every Drop",
+   "storyUrl": "https://undpsrilanka.exposure.co/meaning-in-every-drop",
+   "office": "UNDP Sri Lanka",
+   "location": "Sri Lanka",
+   "region": "RBAP",
+   "date": "2026-10-12",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T15:00:45.971Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/nyerws7qkt080skfwg2yyptuwipahjnak1zw/original.jpg",
+   "alt": "Several smiling schoolchildren in white uniforms line up to fill water bottles at a concrete tap outdoors.",
+   "storyId": "undpsrilanka/meaning-in-every-drop",
+   "storyTitle": "Meaning in Every Drop",
+   "storyUrl": "https://undpsrilanka.exposure.co/meaning-in-every-drop",
+   "office": "UNDP Sri Lanka",
+   "location": "Sri Lanka",
+   "region": "RBAP",
+   "date": "2026-10-12",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "water"
+   ],
+   "addedAt": "2026-11-12T15:00:35.768Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/trpg7zozo1lci0v2lxzjdeenq4v7atdehoq2/original.jpg",
+   "alt": "A woman in a headscarf kneels among rows of green crop plants in a field, tending them with a long wooden stick under a cloudy sky.",
+   "storyId": "undpsrilanka/meaning-in-every-drop",
+   "storyTitle": "Meaning in Every Drop",
+   "storyUrl": "https://undpsrilanka.exposure.co/meaning-in-every-drop",
+   "office": "UNDP Sri Lanka",
+   "location": "Sri Lanka",
+   "region": "RBAP",
+   "date": "2026-10-12",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T15:00:19.525Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/fo1WiBEkr63bvB3MJnFKtnC1TvZZzymH6MfC2wRwaxE/original.jpg",
+   "alt": "An older man in a dark jacket and cap holds a white bucket of green walnuts in an orchard, with wooden crates and a tractor behind him.",
+   "storyId": "undpmoldova/green-walnut-harvest-season",
+   "storyTitle": "Green walnut harvest season",
+   "storyUrl": "https://undpmoldova.exposure.co/green-walnut-harvest-season",
+   "office": "UNDP Moldova",
+   "location": "Moldova",
+   "region": "RBEC",
+   "date": "2026-10-19",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T14:59:18.631Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/tfpk9p31ek0c5qkqv3ekr669idaq5e0rd8ja/original.jpg",
+   "alt": "",
+   "storyId": "undpinzambia/closer-care",
+   "storyTitle": "Closer to Care",
+   "storyUrl": "https://undpinzambia.exposure.co/closer-care",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-10-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods",
+    "cooking-fuel"
+   ],
+   "addedAt": "2026-11-12T14:58:18.858Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/cz1yax5q569myr0xn5jw3eim8qcmzwgj6rsz/original.jpg",
+   "alt": "",
+   "storyId": "undpinzambia/closer-care",
+   "storyTitle": "Closer to Care",
+   "storyUrl": "https://undpinzambia.exposure.co/closer-care",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-10-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-12T14:58:13.906Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/rsj0v4zaddfl6lhsms4hpzcrx62qzp88j726/original.jpg",
+   "alt": "",
+   "storyId": "undpinzambia/road-to-the-market",
+   "storyTitle": "Road to the Market",
+   "storyUrl": "https://undpinzambia.exposure.co/road-to-the-market",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-10-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T14:57:21.466Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/pa6hj9l73krhu8c3ztc3jgas1g6ikwqq9hdw/original.jpg",
+   "alt": "",
+   "storyId": "undpinzambia/road-to-the-market",
+   "storyTitle": "Road to the Market",
+   "storyUrl": "https://undpinzambia.exposure.co/road-to-the-market",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-10-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T14:57:16.566Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/1kzhjjkffkvekyudjwz6gd2j5rgblj8f7m6w/original.jpg",
+   "alt": "",
+   "storyId": "undpinzambia/road-to-the-market",
+   "storyTitle": "Road to the Market",
+   "storyUrl": "https://undpinzambia.exposure.co/road-to-the-market",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-10-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T14:57:12.203Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/gu8fh90vmqaetf31gvh3focaaldl0c6qjs3x/original.jpg",
+   "alt": "",
+   "storyId": "undpinzambia/road-to-the-market",
+   "storyTitle": "Road to the Market",
+   "storyUrl": "https://undpinzambia.exposure.co/road-to-the-market",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-10-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T14:57:05.775Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/pa6vqf79boakt5v2myk9wcblqhqabi7rjd1f/original.png",
+   "alt": "",
+   "storyId": "undpinzambia/road-to-the-market",
+   "storyTitle": "Road to the Market",
+   "storyUrl": "https://undpinzambia.exposure.co/road-to-the-market",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-10-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T14:56:59.399Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/b1q94jiho1spelkmc9jwnal9irdxcek1jias/original.jpg",
+   "alt": "",
+   "storyId": "undpinzambia/trees-the-ancients-of-life",
+   "storyTitle": "Trees: The Ancients of Life",
+   "storyUrl": "https://undpinzambia.exposure.co/trees-the-ancients-of-life",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-10-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T14:56:17.360Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/oqp1q3h02p82r9w90wwti2dwddflk8dzlbgj/original.jpg",
+   "alt": "",
+   "storyId": "undpinzambia/trees-the-ancients-of-life",
+   "storyTitle": "Trees: The Ancients of Life",
+   "storyUrl": "https://undpinzambia.exposure.co/trees-the-ancients-of-life",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-10-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-12T14:56:30.598Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/qh4b86ecvogbcphxi9rh8fpe2g8xe9676ugl/original.jpg",
+   "alt": "",
+   "storyId": "undpinzambia/beyond-the-hive",
+   "storyTitle": "Beyond the Hive",
+   "storyUrl": "https://undpinzambia.exposure.co/beyond-the-hive",
+   "office": "UNDP Zambia",
+   "location": "Zambia",
+   "region": "RBA",
+   "date": "2026-11-02",
+   "year": "2026",
+   "credits": "Story and Photos by Rejoice Emmanuel",
+   "collections": [
+    "sdgs"
+   ],
+   "addedAt": "2026-11-12T14:55:42.215Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/sy9ewjhtvwvlz198wjt84cno6wub9n5uzbv1/original.JPG",
+   "alt": "Aerial view of three partly buried houses in grey mud beside a green tree and a muddy river.",
+   "storyId": "undpnepal/nepal-flood-recovery-four-lives-changed-forever",
+   "storyTitle": "Nepal Flood Recovery: Four Lives Changed Forever",
+   "storyUrl": "https://undpnepal.exposure.co/nepal-flood-recovery-four-lives-changed-forever",
+   "office": "UNDP Nepal",
+   "location": "Nepal",
+   "region": "RBAP",
+   "date": "2026-11-03",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "crisis"
+   ],
+   "addedAt": "2026-11-12T14:54:26.883Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/s1pgd4h3val8mmz7mbtg0oq8u7ofqkqqp1x5/original.jpg",
+   "alt": "Two people in orange vests ride a metal cage cable car over a muddy river, watched from behind by two men with backpacks.",
+   "storyId": "undpnepal/nepal-flood-recovery-four-lives-changed-forever",
+   "storyTitle": "Nepal Flood Recovery: Four Lives Changed Forever",
+   "storyUrl": "https://undpnepal.exposure.co/nepal-flood-recovery-four-lives-changed-forever",
+   "office": "UNDP Nepal",
+   "location": "Nepal",
+   "region": "RBAP",
+   "date": "2026-11-03",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "crisis"
+   ],
+   "addedAt": "2026-11-12T14:54:09.140Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/mb5st6a6w9z0a8dbo1nwjvitrnl5q4ut1t84/original.JPG",
+   "alt": "A woman in a red floral dress carries a large white sack on her back across a muddy, debris-covered road.",
+   "storyId": "undpnepal/nepal-flood-recovery-four-lives-changed-forever",
+   "storyTitle": "Nepal Flood Recovery: Four Lives Changed Forever",
+   "storyUrl": "https://undpnepal.exposure.co/nepal-flood-recovery-four-lives-changed-forever",
+   "office": "UNDP Nepal",
+   "location": "Nepal",
+   "region": "RBAP",
+   "date": "2026-11-03",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "crisis"
+   ],
+   "addedAt": "2026-11-12T14:53:59.091Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/negm8ouqb7resf06ae62fn9mt9m0vsmp24gq/original.jpg",
+   "alt": "A person in a beige UNDP vest walks away over muddy debris past a yellow excavator, with damaged buildings and hills behind.",
+   "storyId": "undpnepal/nepal-flood-recovery-four-lives-changed-forever",
+   "storyTitle": "Nepal Flood Recovery: Four Lives Changed Forever",
+   "storyUrl": "https://undpnepal.exposure.co/nepal-flood-recovery-four-lives-changed-forever",
+   "office": "UNDP Nepal",
+   "location": "Nepal",
+   "region": "RBAP",
+   "date": "2026-11-03",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "undp-in-the-field"
+   ],
+   "addedAt": "2026-11-12T14:53:41.754Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/njhiz8w2xsqpdxvmf0u5mdsq365l4tyq96n5/original.jpg",
+   "alt": "Aerial view of a lush green palm forest bordering a white sand beach and turquoise water with coral reefs.",
+   "storyId": "undp-nature/led-by-communities-rooted-in-nature",
+   "storyTitle": "Led by Communities, Rooted in Nature",
+   "storyUrl": "https://undp-nature.exposure.co/led-by-communities-rooted-in-nature",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-11-05",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, and Rissa Edoo.Header photo: Kiril Dobrev/Unsplash",
+   "collections": [
+    "landscapes"
+   ],
+   "addedAt": "2026-11-12T14:53:22.668Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/e4ej9njkkrxxxlhp7yefwjypqrrljl8n850e/original.jpg",
+   "alt": "Winding river cuts through a lush green valley flanked by steep, tree-covered mountains under a heavy sky of low-hanging white clouds.",
+   "storyId": "undp-nature/led-by-communities-rooted-in-nature",
+   "storyTitle": "Led by Communities, Rooted in Nature",
+   "storyUrl": "https://undp-nature.exposure.co/led-by-communities-rooted-in-nature",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-11-05",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, and Rissa Edoo.Header photo: Kiril Dobrev/Unsplash",
+   "collections": [
+    "landscapes"
+   ],
+   "addedAt": "2026-11-12T14:53:13.912Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/szh5r005n6o2bv8aj5j31pnm3qc573vsn0n0/original.jpg",
+   "alt": "Two Indigenous women in matching pink shirts prune small saplings with garden shears in an outdoor nursery, with community members working in the background.",
+   "storyId": "undp-nature/led-by-communities-rooted-in-nature",
+   "storyTitle": "Led by Communities, Rooted in Nature",
+   "storyUrl": "https://undp-nature.exposure.co/led-by-communities-rooted-in-nature",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-11-05",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, and Rissa Edoo.Header photo: Kiril Dobrev/Unsplash",
+   "collections": [
+    "nature-sustainability"
+   ],
+   "addedAt": "2026-11-12T14:52:42.892Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/4f9m9msq6kcbizls2mb7cvr23yk7r2mojx7e/original.jpg",
+   "alt": "Woman in a vibrant orange hijab stands in a lush green field, holding a woven basket filled with eggplants, surrounded by leafy plants and distant palm trees.",
+   "storyId": "undp-nature/led-by-communities-rooted-in-nature",
+   "storyTitle": "Led by Communities, Rooted in Nature",
+   "storyUrl": "https://undp-nature.exposure.co/led-by-communities-rooted-in-nature",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-11-05",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, and Rissa Edoo.Header photo: Kiril Dobrev/Unsplash",
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-12T14:52:14.388Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/jsd0iu6tehj4rwodndtr8p82ol0rnxsfstyw/original.jpeg",
+   "alt": "Smiling person wearing a bright orange headscarf and green patterned tunic, standing in front of a white yurt under a clear blue sky.",
+   "storyId": "undp-nature/led-by-communities-rooted-in-nature",
+   "storyTitle": "Led by Communities, Rooted in Nature",
+   "storyUrl": "https://undp-nature.exposure.co/led-by-communities-rooted-in-nature",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-11-05",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, and Rissa Edoo.Header photo: Kiril Dobrev/Unsplash",
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-12T14:52:09.638Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/cjryl0gz7z7fyuy1b0ltrvxgkrs9mpv3sqd5/original.JPG",
+   "alt": "An older woman in a beige headscarf and dark jacket stands in front of a cluttered stall with metal pots and trays.",
+   "storyId": "undparabic/bringing-gaza-citys-historic-firas-market-back-to-life",
+   "storyTitle": "Bringing Gaza City’s historic Firas Market back to life",
+   "storyUrl": "https://undparabic.exposure.co/bringing-gaza-citys-historic-firas-market-back-to-life",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-11-10",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-12T14:51:12.607Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/abwjmq6ol7j6aiw6uhgc746fkirsq3wrmgy2/original.JPG",
+   "alt": "An older man with a white beard looks out a window at a debris-strewn lot, where a lone figure walks past rubble toward distant buildings.",
+   "storyId": "undparabic/bringing-gaza-citys-historic-firas-market-back-to-life",
+   "storyTitle": "Bringing Gaza City’s historic Firas Market back to life",
+   "storyUrl": "https://undparabic.exposure.co/bringing-gaza-citys-historic-firas-market-back-to-life",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-11-10",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "photos-of-the-year"
+   ],
+   "addedAt": "2026-11-12T14:50:18.307Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/sotqqqkrqoqtl77o1qv4pn82yo0p5xkmh7vd/original.JPG",
+   "alt": "An elderly man with a white beard and white headcloth wears a tan collared shirt, standing in a room with hanging clothes behind him.",
+   "storyId": "undparabic/bringing-gaza-citys-historic-firas-market-back-to-life",
+   "storyTitle": "Bringing Gaza City’s historic Firas Market back to life",
+   "storyUrl": "https://undparabic.exposure.co/bringing-gaza-citys-historic-firas-market-back-to-life",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-11-10",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-12T14:50:39.865Z"
+  }
+ ]
+}
