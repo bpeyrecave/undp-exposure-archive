@@ -110,12 +110,16 @@ def parse_markdown(md):
         except ValueError:
             pass
     photos, seen = [], set()
-    for alt, src in re.findall(r"!\[([^\]]*)\]\(([^)\s]+)\)", md):
+    # A caption is the italic line right under a photo: ![alt](src)\n*caption*
+    for alt, src, caption in re.findall(r"!\[([^\]]*)\]\((\S+)\)(?:[ \t]*\n\*([^*\n]+)\*)?", md):
         src = base_image(src)
         if src in seen or "/avatar/" in src:
             continue
         seen.add(src)
-        photos.append({"src": src, "alt": alt if alt and alt != "Photo" else ""})
+        photo = {"src": src, "alt": alt if alt and alt != "Photo" else ""}
+        if caption.strip():
+            photo["caption"] = caption.strip()
+        photos.append(photo)
     credits = None
     m = re.search(r"^.*\b(Photos?|Photography|Fotos?|Fotografías?|Crédits? photos?)\b[^\n]{0,200}$", md.split("## Footnotes")[-1], re.M | re.I)
     if m and "## Footnotes" in md:
@@ -200,7 +204,10 @@ def clean_manual_photos(photos):
                 continue
             cover_seen = True
         seen.add(src)
-        kept.append({"src": src, "alt": "" if alt.endswith(" - cover photo") else alt})
+        photo = {"src": src, "alt": "" if alt.endswith(" - cover photo") else alt}
+        if (p.get("caption") or "").strip():
+            photo["caption"] = p["caption"].strip()
+        kept.append(photo)
     return kept
 
 
@@ -270,6 +277,7 @@ def main():
                 "date": rss_dates.get(item["slug"]) or date_from_cover(item["cover"]) or item["lastmod"],
                 "images": [], "credits": None, "photoSet": "cover",
             }
+            fresh_md = False
             # Reuse a full photo set collected earlier if the story has not changed since.
             if prev and prev.get("photoSet") == "full" and prev.get("lastmod") == item["lastmod"]:
                 story.update({k: prev[k] for k in ("images", "credits", "photoSet", "title", "date")})
@@ -278,6 +286,7 @@ def main():
                 try:
                     parsed = parse_markdown(get(item["url"] + ".md"))
                     blocked_run = 0
+                    fresh_md = bool(parsed["photos"])
                     if parsed["photos"]:
                         story["images"] = parsed["photos"]
                         story["photoSet"] = "full"
@@ -299,8 +308,9 @@ def main():
                 # Blocked this run but we already have the photos from an earlier run.
                 story.update({k: prev[k] for k in ("images", "credits", "photoSet")})
 
+            # The latest hand capture wins, unless Exposure gave us the story itself this run.
             hand = manual.get(item["url"].lower())
-            if story["photoSet"] != "full" and hand:
+            if hand and not fresh_md:
                 story["images"] = hand["photos"]
                 story["photoSet"] = "full"
                 story["title"] = hand.get("title") or story["title"]

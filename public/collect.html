@@ -120,11 +120,11 @@
       "const base=u=>u.split(';')[0].split('?')[0];" +
       "let md='';try{const r=await fetch(p+'.md',{credentials:'same-origin'});if(r.ok)md=await r.text()}catch(e){}" +
       "let title=(document.querySelector('meta[property=\"og:title\"]')||{}).content||document.title,date=null,credits=null;const photos=[],seen=new Set();" +
-      "const add=(src,alt)=>{src=base(src);if(!src||seen.has(src)||src.includes('/avatar/')||!/exposure\\.accelerator\\.net\\/production\\/(photos|posts)\\//.test(src))return;seen.add(src);photos.push({src,alt:alt&&alt!=='Photo'?alt:''})};" +
+      "const add=(src,alt,cap)=>{src=base(src);if(!src||seen.has(src)||src.includes('/avatar/')||!/exposure\\.accelerator\\.net\\/production\\/(photos|posts)\\//.test(src))return;seen.add(src);const o={src,alt:alt&&alt!=='Photo'?alt:''};if(cap&&cap.trim())o.caption=cap.trim();photos.push(o)};" +
       "if(md){" +
         "const t=md.match(/^# (.+)$/m);if(t)title=t[1].trim();" +
         "const d=md.match(/^Published:\\s*(.+)$/m);if(d){const x=new Date(d[1].trim()+' 12:00 UTC');if(!isNaN(x))date=x.toISOString().slice(0,10)}" +
-        "for(const m of md.matchAll(/!\\[([^\\]]*)\\]\\(([^)\\s]+)\\)/g))add(m[2],m[1]);" +
+        "for(const m of md.matchAll(/!\\[([^\\]]*)\\]\\((\\S+)\\)(?:[ \\t]*\\n\\*([^*\\n]+)\\*)?/g))add(m[2],m[1],m[3]);" +
         "const f=md.split('## Footnotes')[1];if(f){const c=f.match(/^.*\\b(Photos?|Photography|Fotos?|Fotograf\\u00edas?|Cr\\u00e9dits? photos?)\\b[^\\n]{0,200}$/mi);if(c)credits=c[0].trim().slice(0,200)}" +
       "}else{" +
         "let cover=false;document.querySelectorAll('img').forEach(i=>{const s=i.currentSrc||i.src,a=i.alt||'';if(/^Read /.test(a)||(i.closest('a[href]')&&i.closest('a').pathname!==location.pathname))return;if(s.includes('/cover-photo/')){if(cover)return;cover=true}add(s,a)});" +

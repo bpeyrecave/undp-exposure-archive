@@ -8,6 +8,7 @@ type Region = "All" | "RBA" | "RBAS" | "RBEC" | "RBLAC" | "RBAP" | "GLOBAL";
 interface Photo {
   src: string;
   alt: string;
+  caption?: string;
 }
 
 // One Exposure story, as written by collector/collect.py into public/data/stories.json.
@@ -521,6 +522,7 @@ function StoryCard({
 function StoryLightbox({ story, onClose }: { story: Story; onClose: () => void }) {
   const [imageIndex, setImageIndex] = useState(0);
   const credits = story.credits || `Photography: ${story.office}`;
+  const currentCaption = story.images[imageIndex].caption;
 
   const previous = useCallback(() => {
     setImageIndex((current) => (current - 1 + story.images.length) % story.images.length);
@@ -577,6 +579,15 @@ function StoryLightbox({ story, onClose }: { story: Story; onClose: () => void }
       </div>
 
       <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden p-3 sm:p-8">
+        {currentCaption && (
+          <div className="pointer-events-none absolute inset-x-0 bottom-4 z-20 flex justify-center px-4 sm:bottom-6 sm:px-12">
+            <div className="max-w-2xl bg-black/85 px-4 py-2 backdrop-blur-md border border-white/20 text-center shadow-2xl">
+              <p className="font-card-title text-xs leading-relaxed text-white sm:text-[13px]">
+                {currentCaption}
+              </p>
+            </div>
+          </div>
+        )}
         <AnimatePresence mode="wait">
           <motion.div
             key={imageIndex}
