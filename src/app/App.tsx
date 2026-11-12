@@ -1,65 +1,62 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, X } from "lucide-react";
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
-
-type Region = "All" | "RBA" | "RBAS" | "RBEC" | "RBLAC" | "RBAP" | "GLOBAL";
-
-interface Photo {
-  src: string;
-  alt: string;
-  caption?: string;
-}
-
-// One Exposure story, as written by collector/collect.py into public/data/stories.json.
-interface Story {
-  id: string;
-  region: Exclude<Region, "All">;
-  office: string;
-  title: string;
-  location: string;
-  date: string | null; // ISO yyyy-mm-dd
-  year: string;
-  url: string;
-  images: Photo[];
-  credits?: string | null;
-  photoSet: "full" | "cover";
-}
+import { Lightbox } from "./Lightbox";
+import { CuratorBar, PicksView } from "./PicksView";
+import { PicksProvider, usePicks } from "./picks";
+import { formatDate, pad, sized, storyItems, type GalleryItem, type Region, type Story } from "./shared";
 
 interface ArchiveData {
   updated: string;
   stories: Story[];
 }
 
+interface OpenGallery {
+  items: GalleryItem[];
+  index: number;
+  heading?: string;
+  numberInStory: boolean;
+}
+
 const REGIONS: Region[] = ["All", "RBA", "RBAS", "RBEC", "RBLAC", "RBAP", "GLOBAL"];
 const PAGE_SIZE = 30;
 const MAX_DOTS = 16;
 
-// Exposure serves resized copies of every photo from its CDN.
-function sized(src: string, width: number) {
-  return `${src};resize(${width},_).jpeg?auto=webp`;
-}
-
-function formatDate(date: string | null) {
-  if (!date) return "";
-  return new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", {
-    month: "short",
-    day: "2-digit",
-    year: "numeric",
-    timeZone: "UTC",
-  });
-}
-
-function pad(value: number) {
-  return value < 100 ? value.toString().padStart(2, "0") : value.toLocaleString("en-US");
+// The address decides the view: "#picks" or "#picks/<collection>" show the
+// editors' picks; anything else shows the stories.
+function readRoute() {
+  const match = location.hash.match(/^#picks(?:\/([\w-]+))?/);
+  return match ? { view: "picks" as const, collection: match[1] ?? null } : { view: "stories" as const, collection: null };
 }
 
 export default function App() {
+  return (
+    <PicksProvider>
+      <Archive />
+    </PicksProvider>
+  );
+}
+
+function Archive() {
   const [data, setData] = useState<ArchiveData | null>(null);
   const [loadError, setLoadError] = useState(false);
   const [activeRegion, setActiveRegion] = useState<Region>("All");
   const [selectedYear, setSelectedYear] = useState<string>("All");
-  const [selectedStory, setSelectedStory] = useState<Story | null>(null);
+  const [gallery, setGallery] = useState<OpenGallery | null>(null);
+  const [route, setRoute] = useState(readRoute);
+  const { picks, curator } = usePicks();
+
+  useEffect(() => {
+    const onHash = () => setRoute(readRoute());
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+
+  const go = (hash: string) => {
+    history.pushState(null, "", hash || `${location.pathname}${location.search}`);
+    setRoute(readRoute());
+  };
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
@@ -136,7 +133,11 @@ export default function App() {
         <div className="mx-auto max-w-[1560px] px-5 pb-9 pt-5 sm:px-8 sm:pb-12 sm:pt-7 lg:px-12">
           <div className="mb-16 flex items-center justify-between sm:mb-24">
             <a
-              href="#archive"
+              href="#"
+              onClick={(event) => {
+                event.preventDefault();
+                go("");
+              }}
               className="font-proxima-condensed text-xs font-semibold uppercase tracking-[0.18em] text-foreground transition-colors hover:text-accent"
             >
               UNDP / Exposure
@@ -164,7 +165,20 @@ export default function App() {
         </div>
       </header>
 
-      <main id="archive" className="mx-auto max-w-[1560px] px-5 pb-20 sm:px-8 lg:px-12">
+      <main id="archive" className={`mx-auto max-w-[1560px] px-5 sm:px-8 lg:px-12 ${curator ? "pb-40" : "pb-20"}`}>
+        <div className="flex items-end gap-8 border-b border-border pt-6" role="tablist" aria-label="Archive views">
+          <ViewTab label="Stories" count={stories.length} active={route.view === "stories"} onClick={() => go("")} />
+          <ViewTab label="Editors' picks" count={picks.picks.length} active={route.view === "picks"} onClick={() => go("#picks")} />
+        </div>
+
+        {route.view === "picks" ? (
+          <PicksView
+            collection={route.collection}
+            onSelectCollection={(id) => go(id ? `#picks/${id}` : "#picks")}
+            onOpen={(items, index, heading) => setGallery({ items, index, heading, numberInStory: false })}
+          />
+        ) : (
+        <>
         <div className="flex items-center justify-between border-b border-border py-3 sm:py-3.5">
           <nav
             aria-label="Filter archive by region"
@@ -247,13 +261,15 @@ export default function App() {
                   key={story.id}
                   story={story}
                   featured={activeRegion === "All" && selectedYear === "All" && index === 0}
-                  onOpen={() => setSelectedStory(story)}
+                  onOpen={() => setGallery({ items: storyItems(story), index: 0, numberInStory: true })}
                 />
               ))}
             </motion.div>
           </AnimatePresence>
         )}
         {data && visibleCount < filteredStories.length && <div ref={sentinelRef} className="h-px" aria-hidden="true" />}
+        </>
+        )}
 
         <footer className="mt-16 flex flex-col gap-4 border-t border-border pt-5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>Stories of development, told in photographs.</p>
@@ -263,10 +279,19 @@ export default function App() {
       </main>
 
       <AnimatePresence>
-        {selectedStory && (
-          <StoryLightbox story={selectedStory} onClose={() => setSelectedStory(null)} />
+        {gallery && (
+          <Lightbox
+            key={`${gallery.items[0]?.src}-${gallery.index}`}
+            items={gallery.items}
+            startIndex={gallery.index}
+            heading={gallery.heading}
+            numberInStory={gallery.numberInStory}
+            onClose={() => setGallery(null)}
+          />
         )}
       </AnimatePresence>
+
+      <CuratorBar />
     </div>
   );
 }
@@ -519,176 +544,19 @@ function StoryCard({
   );
 }
 
-function StoryLightbox({ story, onClose }: { story: Story; onClose: () => void }) {
-  const [imageIndex, setImageIndex] = useState(0);
-  const credits = story.credits || `Photography: ${story.office}`;
-  const currentCaption = story.images[imageIndex].caption;
-  const [downloading, setDownloading] = useState(false);
-
-  // Save the full-resolution original. Exposure's image server allows cross-site
-  // downloads, so fetch it as a file; if that fails, open it in a new tab instead.
-  const downloadPhoto = useCallback(async () => {
-    const src = story.images[imageIndex].src;
-    const extension = (src.match(/\.(jpe?g|png|gif|webp)$/i)?.[1] ?? "jpg").toLowerCase();
-    const slug = story.url.split("/").pop() || "photo";
-    const filename = `${slug}-${pad(imageIndex + 1)}.${extension}`;
-    setDownloading(true);
-    try {
-      const response = await fetch(src);
-      if (!response.ok) throw new Error(String(response.status));
-      const url = URL.createObjectURL(await response.blob());
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = filename;
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 10000);
-    } catch {
-      window.open(src, "_blank", "noopener");
-    } finally {
-      setDownloading(false);
-    }
-  }, [imageIndex, story]);
-
-  const previous = useCallback(() => {
-    setImageIndex((current) => (current - 1 + story.images.length) % story.images.length);
-  }, [story.images.length]);
-
-  const next = useCallback(() => {
-    setImageIndex((current) => (current + 1) % story.images.length);
-  }, [story.images.length]);
-
-  useEffect(() => {
-    const handleKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
-      if (event.key === "ArrowLeft") previous();
-      if (event.key === "ArrowRight") next();
-    };
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [next, onClose, previous]);
-
-  // Preload the neighbouring photos for quick browsing.
-  useEffect(() => {
-    if (story.images.length < 2) return;
-    [1, -1].forEach((step) => {
-      const img = new Image();
-      img.src = sized(story.images[(imageIndex + step + story.images.length) % story.images.length].src, 1600);
-    });
-  }, [imageIndex, story.images]);
-
+function ViewTab({ label, count, active, onClick }: { label: string; count: number; active: boolean; onClick: () => void }) {
   return (
-    <motion.div
-      role="dialog"
-      aria-modal="true"
-      aria-label={story.title}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 flex flex-col bg-black"
+    <button
+      type="button"
+      role="tab"
+      aria-selected={active}
+      onClick={onClick}
+      className={`-mb-px flex items-baseline gap-2 border-b-2 pb-3 font-proxima-condensed text-base font-bold uppercase tracking-[0.12em] transition-colors ${
+        active ? "border-accent text-foreground" : "border-transparent text-muted-foreground hover:text-foreground"
+      }`}
     >
-      <div className="flex h-16 shrink-0 items-center justify-between border-b border-white/15 px-4 sm:px-7">
-        <div className="min-w-0">
-          <p className="truncate font-proxima-condensed text-xs font-bold uppercase tracking-[0.16em] text-white/65">
-            {story.office} / {story.region}
-          </p>
-          <p className="mt-1 hidden truncate font-card-title text-sm font-semibold text-white sm:block">{story.title}</p>
-        </div>
-        <button
-          type="button"
-          onClick={onClose}
-          className="ml-6 flex h-9 w-9 shrink-0 items-center justify-center border border-white/25 text-white transition-colors hover:bg-white hover:text-black"
-          aria-label="Close story"
-        >
-          <X size={17} />
-        </button>
-      </div>
-
-      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden p-3 sm:p-8">
-        {currentCaption && (
-          <div className="pointer-events-none absolute inset-x-0 bottom-4 z-20 flex justify-center px-4 sm:bottom-6 sm:px-12">
-            <div className="max-w-2xl bg-black/85 px-4 py-2 backdrop-blur-md border border-white/20 text-center shadow-2xl">
-              <p className="font-card-title text-xs leading-relaxed text-white sm:text-[13px]">
-                {currentCaption}
-              </p>
-            </div>
-          </div>
-        )}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={imageIndex}
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -30 }}
-            transition={{ duration: 0.3 }}
-            className="flex h-full w-full items-center justify-center"
-          >
-            <ImageWithFallback
-              src={sized(story.images[imageIndex].src, 1600)}
-              alt={story.images[imageIndex].alt || `${story.title}, photograph ${imageIndex + 1}`}
-              className="max-h-full max-w-full object-contain"
-            />
-          </motion.div>
-        </AnimatePresence>
-
-        {story.images.length > 1 && (
-          <>
-            <button
-              type="button"
-              onClick={previous}
-              className="absolute left-4 flex h-11 w-11 items-center justify-center bg-black/70 text-white backdrop-blur-sm transition-colors hover:bg-accent hover:text-accent-foreground sm:left-8"
-              aria-label="Previous photograph"
-            >
-              <ArrowLeft size={18} />
-            </button>
-            <button
-              type="button"
-              onClick={next}
-              className="absolute right-4 flex h-11 w-11 items-center justify-center bg-black/70 text-white backdrop-blur-sm transition-colors hover:bg-accent hover:text-accent-foreground sm:right-8"
-              aria-label="Next photograph"
-            >
-              <ArrowRight size={18} />
-            </button>
-          </>
-        )}
-      </div>
-
-      <div className="flex shrink-0 flex-col gap-2 border-t border-white/15 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-7">
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-          <span className="font-proxima-condensed text-xs font-bold uppercase tracking-[0.14em] text-white/80">
-            {story.location}
-          </span>
-          <span className="hidden text-white/30 sm:inline" aria-hidden="true">·</span>
-          <span className="font-proxima-condensed text-[11px] font-medium tracking-[0.04em] text-accent">
-            {credits}
-          </span>
-        </div>
-        <div className="flex items-center gap-3">
-          <button
-            type="button"
-            onClick={downloadPhoto}
-            disabled={downloading}
-            className="flex items-center gap-1 font-proxima-condensed text-[11px] font-bold uppercase tracking-[0.12em] text-white/70 transition-colors hover:text-accent disabled:opacity-50"
-            aria-label={`Download photograph ${imageIndex + 1} in full resolution`}
-          >
-            {downloading ? "Downloading…" : "Download"}
-            <ArrowDown size={13} strokeWidth={1.5} />
-          </button>
-          <a
-            href={story.url}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-1 font-proxima-condensed text-[11px] font-bold uppercase tracking-[0.12em] text-white/70 transition-colors hover:text-accent"
-          >
-            View on Exposure
-            <ArrowUpRight size={13} strokeWidth={1.5} />
-          </a>
-          <span className="font-proxima-condensed text-xs font-bold uppercase tracking-[0.16em] text-white/50">
-            {pad(imageIndex + 1)} / {pad(story.images.length)}
-          </span>
-        </div>
-      </div>
-    </motion.div>
+      {label}
+      <span className="text-[11px] font-semibold opacity-65">{pad(count)}</span>
+    </button>
   );
 }

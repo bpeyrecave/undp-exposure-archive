@@ -60,3 +60,24 @@ lets a person fill in stories one at a time from their own browser:
 
 Captured stories are kept for good. The collector uses them whenever Exposure blocks the story page,
 and the report shows how many stories were collected by hand.
+
+## Editors' picks
+
+The **Editors' picks** tab shows a curated selection of individual photos, grouped into collections
+(each collection has its own link, e.g. `…/undp-exposure-archive/#picks/climate-nature`).
+Visitors can browse, download and open the source story. Picks are stored in `public/data/picks.json`.
+
+To curate:
+
+1. Open the archive with `?curate` at the end of the address
+   (`https://bpeyrecave.github.io/undp-exposure-archive/?curate`). Curator mode stays on in that browser
+   until you click **Exit** in the bar at the bottom.
+2. Open any story, and in the gallery click **Pick**. Tick the collections the photo belongs to, or type a
+   new collection name and click **Add**. **Remove from picks** takes it out again. Collections can be deleted
+   with the × next to their name in the Editors' picks tab.
+3. Your changes are a draft in your browser until published. Click **Download picks.json** in the curator bar,
+   then upload the file to `public/data/` on GitHub (**Add file → Upload files**, it replaces the old one) and
+   commit. The bar shows "everything published" once the site has updated.
+
+Curator mode only changes your own browser; only people who can upload to the repository can publish picks.
+
