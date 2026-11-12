@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Collect Photos – UNDP Exposure Photo Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;800&family=Barlow+Semi+Condensed:wght@500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+<style>
+  /* Same palette and type as the archive (src/styles/theme.css, fonts.css). */
+  :root {
+    --background: #232e3d; --foreground: #f2f5f8; --card: #1c2532; --muted: #a4b2c1;
+    --accent: #ffe17e; --accent-foreground: #171203; --border: rgba(255, 255, 255, 0.12);
+    --ok: #8fd19e;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--foreground);
+    font-family: "Proxima Nova", "Montserrat", -apple-system, sans-serif; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 80px; }
+  .label { font-family: "Barlow Semi Condensed", "Montserrat", sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px; color: var(--muted); }
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 56px; }
+  .top a { color: var(--foreground); text-decoration: none; }
+  .top a:hover { color: var(--accent); }
+  h1 { font-family: "Söhne", "Plus Jakarta Sans", sans-serif; font-weight: 800; text-transform: uppercase;
+    letter-spacing: -0.03em; line-height: 0.95; font-size: clamp(1.8rem, 4.5vw, 3.6rem); margin: 0 0 18px; }
+  h1 span { display: block; color: var(--accent); }
+  p { color: var(--muted); line-height: 1.6; max-width: 680px; }
+  .step { border-top: 1px solid var(--border); padding: 28px 0; display: grid; gap: 14px; }
+  .step h2 { margin: 0; font-size: 20px; font-weight: 700; }
+  .step h2 b { color: var(--accent); font-family: "DM Mono", monospace; font-weight: 500; margin-right: 10px; }
+  .bookmarklet { display: inline-flex; align-items: center; gap: 8px; width: fit-content; padding: 10px 16px;
+    background: var(--accent); color: var(--accent-foreground); text-decoration: none; cursor: grab;
+    font-family: "Barlow Semi Condensed", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; font-size: 14px; }
+  button { font-family: "Barlow Semi Condensed", sans-serif; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.14em; font-size: 13px; padding: 9px 14px; border: 1px solid var(--border);
+    background: var(--card); color: var(--foreground); cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); color: var(--accent-foreground); border-color: var(--accent); }
+  button:disabled { opacity: 0.4; cursor: default; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  select { background: var(--card); color: var(--foreground); border: 1px solid var(--border); padding: 9px 10px;
+    font-family: inherit; font-size: 14px; }
+  .progress { height: 4px; background: rgba(255,255,255,0.1); }
+  .progress div { height: 100%; background: var(--accent); width: 0; transition: width 0.3s; }
+  ul { list-style: none; margin: 0; padding: 0; border: 1px solid var(--border); max-height: 60vh; overflow-y: auto; }
+  li { display: flex; gap: 12px; align-items: baseline; padding: 9px 12px; border-bottom: 1px solid var(--border); font-size: 14px; }
+  li:last-child { border-bottom: 0; }
+  li a { color: var(--foreground); flex: 1; min-width: 0; }
+  li a:visited { color: var(--muted); }
+  li .meta { font-family: "DM Mono", monospace; font-size: 11px; color: var(--muted); white-space: nowrap; }
+  li.done a { color: var(--ok); text-decoration: line-through; }
+  li.done .meta { color: var(--ok); }
+  .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--accent);
+    color: var(--accent-foreground); padding: 12px 18px; font-weight: 600; font-size: 14px; display: none; max-width: 90vw; }
+  code { font-family: "DM Mono", monospace; font-size: 13px; color: var(--accent); }
+  ol { color: var(--muted); line-height: 1.8; margin: 0; padding-left: 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="label" href="./">UNDP / Exposure &larr; back to archive</a>
+    <span class="label">Collect photos</span>
+  </div>
+
+  <h1>Add full photo sets<span>Story by story</span></h1>
+  <p>Exposure doesn't let the automatic collector open story pages, so most cards show only a cover photo.
+    You can fill them in by hand: open a story in your own browser and click one button. Its photos are saved here,
+    and you send them to the archive in batches.</p>
+
+  <section class="step">
+    <h2><b>01</b>Add the button to your browser</h2>
+    <p>Drag this yellow button onto your bookmarks bar. (Show the bar with Ctrl+Shift+B, or Cmd+Shift+B on a Mac.)</p>
+    <a class="bookmarklet" id="bookmarklet" href="#" onclick="event.preventDefault(); alert('Drag this button to your bookmarks bar, then click it while viewing an Exposure story.')">+ Add to archive</a>
+  </section>
+
+  <section class="step">
+    <h2><b>02</b>Open a story and click the button</h2>
+    <p>Pick a story below. It opens on Exposure. Click <strong>+ Add to archive</strong> in your bookmarks bar, and this page
+      reopens with the story ticked off. Stories already done are shown in green.</p>
+    <div class="row">
+      <select id="office"><option value="">All offices</option></select>
+      <label class="label"><input type="checkbox" id="hideDone" checked /> Hide done</label>
+      <span class="label" id="count"></span>
+    </div>
+    <div class="progress"><div id="bar"></div></div>
+    <ul id="list"><li>Loading stories…</li></ul>
+  </section>
+
+  <section class="step">
+    <h2><b>03</b>Send your batch to the archive</h2>
+    <p id="queueInfo">Nothing collected yet.</p>
+    <div class="row">
+      <button class="primary" id="download" disabled>Download collected stories</button>
+      <button id="clear" disabled>Clear after uploading</button>
+    </div>
+    <ol>
+      <li>Download the file (it's named like <code>manual-2026-11-05.json</code>).</li>
+      <li>On GitHub, open the archive's <code>collector/manual</code> folder, then choose <strong>Add file &rarr; Upload files</strong> and drop the file in.</li>
+      <li>Click <strong>Commit changes</strong>. The archive rebuilds with those photos in a few minutes.</li>
+      <li>Come back and click <strong>Clear after uploading</strong>.</li>
+    </ol>
+  </section>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function () {
+  var QUEUE_KEY = "undp-archive-manual-queue";
+  var here = location.href.split("#")[0].split("?")[0];
+
+  // --- Bookmarklet: runs on an Exposure story page in the visitor's own browser. ---
+  function bookmarkletSource(target) {
+    return "(async()=>{" +
+      "const T=" + JSON.stringify(target) + ";" +
+      "if(!/\\.exposure\\.co$/i.test(location.hostname)){alert('Open an Exposure story first, then click this button.');return}" +
+      "const p=location.pathname.replace(/\\/$/,'');" +
+      "if(!p||p.split('/').length!==2||p.endsWith('.md')){alert('Open a single story (not the homepage), then click this button.');return}" +
+      "const base=u=>u.split(';')[0].split('?')[0];" +
+      "let md='';try{const r=await fetch(p+'.md',{credentials:'same-origin'});if(r.ok)md=await r.text()}catch(e){}" +
+      "let title=(document.querySelector('meta[property=\"og:title\"]')||{}).content||document.title,date=null,credits=null;const photos=[],seen=new Set();" +
+      "const add=(src,alt)=>{src=base(src);if(!src||seen.has(src)||src.includes('/avatar/')||!/exposure\\.accelerator\\.net\\/production\\/(photos|posts)\\//.test(src))return;seen.add(src);photos.push({src,alt:alt&&alt!=='Photo'?alt:''})};" +
+      "if(md){" +
+        "const t=md.match(/^# (.+)$/m);if(t)title=t[1].trim();" +
+        "const d=md.match(/^Published:\\s*(.+)$/m);if(d){const x=new Date(d[1].trim()+' 12:00 UTC');if(!isNaN(x))date=x.toISOString().slice(0,10)}" +
+        "for(const m of md.matchAll(/!\\[([^\\]]*)\\]\\(([^)\\s]+)\\)/g))add(m[2],m[1]);" +
+        "const f=md.split('## Footnotes')[1];if(f){const c=f.match(/^.*\\b(Photos?|Photography|Fotos?|Fotograf\\u00edas?|Cr\\u00e9dits? photos?)\\b[^\\n]{0,200}$/mi);if(c)credits=c[0].trim().slice(0,200)}" +
+      "}else{" +
+        "document.querySelectorAll('img').forEach(i=>add(i.currentSrc||i.src,i.alt));" +
+      "}" +
+      "if(!photos.length){alert('No photos found on this page.');return}" +
+      "const data={url:location.origin.toLowerCase()+p,title:title.replace(/ [-\\u2013] .*$/,'').trim(),date,credits,photos,source:md?'md':'page',collectedAt:new Date().toISOString()};" +
+      "window.open(T+'#add='+encodeURIComponent(JSON.stringify(data)),'undp-archive-collector');" +
+    "})()";
+  }
+  document.getElementById("bookmarklet").href = "javascript:" + encodeURIComponent(bookmarkletSource(here));
+
+  // --- Collected stories, kept in this browser until uploaded. ---
+  function readQueue() {
+    try { return JSON.parse(localStorage.getItem(QUEUE_KEY)) || {}; } catch (e) { return {}; }
+  }
+  function writeQueue(q) {
+    try { localStorage.setItem(QUEUE_KEY, JSON.stringify(q)); } catch (e) { toast("Could not save in this browser (storage blocked)."); }
+  }
+  var queue = readQueue();
+
+  function toast(text) {
+    var el = document.getElementById("toast");
+    el.textContent = text; el.style.display = "block";
+    clearTimeout(toast.t); toast.t = setTimeout(function () { el.style.display = "none"; }, 4000);
+  }
+
+  function receive() {
+    if (location.hash.indexOf("#add=") !== 0) return;
+    try {
+      var data = JSON.parse(decodeURIComponent(location.hash.slice(5)));
+      if (!data.url || !Array.isArray(data.photos)) throw new Error("bad data");
+      queue[data.url] = data;
+      writeQueue(queue);
+      toast("Added: " + data.title + " (" + data.photos.length + " photos)");
+    } catch (e) {
+      toast("That story could not be read. Please try the button again.");
+    }
+    history.replaceState(null, "", here);
+    render();
+  }
+  window.addEventListener("hashchange", receive);
+
+  // --- To-do list: stories the archive only has a cover photo for. ---
+  var stories = [];
+  fetch("./data/stories.json").then(function (r) { return r.json(); }).then(function (d) {
+    stories = d.stories.filter(function (s) { return s.photoSet !== "full"; });
+    var offices = Array.from(new Set(stories.map(function (s) { return s.office; }))).sort();
+    var sel = document.getElementById("office");
+    offices.forEach(function (o) { var opt = document.createElement("option"); opt.value = opt.textContent = o; sel.appendChild(opt); });
+    render();
+  }).catch(function () { document.getElementById("list").innerHTML = "<li>Could not load the story list.</li>"; });
+
+  document.getElementById("office").addEventListener("change", render);
+  document.getElementById("hideDone").addEventListener("change", render);
+
+  function render() {
+    var office = document.getElementById("office").value;
+    var hideDone = document.getElementById("hideDone").checked;
+    var scope = stories.filter(function (s) { return !office || s.office === office; });
+    var done = scope.filter(function (s) { return queue[s.url]; }).length;
+    document.getElementById("count").textContent = done + " / " + scope.length + " collected";
+    document.getElementById("bar").style.width = scope.length ? (100 * done / scope.length) + "%" : "0";
+    var list = document.getElementById("list");
+    list.innerHTML = "";
+    scope.filter(function (s) { return !(hideDone && queue[s.url]); }).slice(0, 400).forEach(function (s) {
+      var li = document.createElement("li");
+      if (queue[s.url]) li.className = "done";
+      var a = document.createElement("a");
+      a.href = s.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = s.title;
+      var meta = document.createElement("span");
+      meta.className = "meta";
+      meta.textContent = queue[s.url] ? queue[s.url].photos.length + " photos ✓" : s.office + " · " + (s.date || "");
+      li.appendChild(a); li.appendChild(meta); list.appendChild(li);
+    });
+    if (!list.children.length) list.innerHTML = "<li>All done here.</li>";
+
+    var n = Object.keys(queue).length;
+    var photos = Object.keys(queue).reduce(function (c, k) { return c + queue[k].photos.length; }, 0);
+    document.getElementById("queueInfo").textContent = n
+      ? n + (n === 1 ? " story (" : " stories (") + photos + " photos) collected in this browser and ready to send."
+      : "Nothing collected yet.";
+    document.getElementById("download").disabled = !n;
+    document.getElementById("clear").disabled = !n;
+  }
+
+  document.getElementById("download").addEventListener("click", function () {
+    var body = JSON.stringify({ stories: Object.keys(queue).map(function (k) { return queue[k]; }) }, null, 1);
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([body], { type: "application/json" }));
+    a.download = "manual-" + new Date().toISOString().slice(0, 10) + "-" + Date.now().toString(36).slice(-4) + ".json";
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+  document.getElementById("clear").addEventListener("click", function () {
+    if (!confirm("Only clear once the downloaded file is uploaded to GitHub. Clear now?")) return;
+    queue = {}; writeQueue(queue); render();
+  });
+
+  receive();
+  render();
+})();
+</script>
+</body>
+</html>

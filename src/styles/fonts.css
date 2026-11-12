@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Montserrat:wght@400;500;600;700;800&family=Barlow+Semi+Condensed:wght@500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+
+body {
+  font-family: "Proxima Nova", "proxima-nova", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-display {
+  font-family: "Söhne", "Soehne", "Söhne Breit", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-card-title {
+  font-family: "Proxima Nova", "proxima-nova", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-proxima-condensed {
+  font-family: "Proxima Nova Condensed", "proxima-nova-condensed", "Barlow Semi Condensed", "Montserrat", sans-serif;
+}
+
+.font-mono {
+  font-family: "DM Mono", monospace;
+}
