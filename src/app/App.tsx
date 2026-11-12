@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, X } from "lucide-react";
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, X } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 
 type Region = "All" | "RBA" | "RBAS" | "RBEC" | "RBLAC" | "RBAP" | "GLOBAL";
@@ -523,6 +523,33 @@ function StoryLightbox({ story, onClose }: { story: Story; onClose: () => void }
   const [imageIndex, setImageIndex] = useState(0);
   const credits = story.credits || `Photography: ${story.office}`;
   const currentCaption = story.images[imageIndex].caption;
+  const [downloading, setDownloading] = useState(false);
+
+  // Save the full-resolution original. Exposure's image server allows cross-site
+  // downloads, so fetch it as a file; if that fails, open it in a new tab instead.
+  const downloadPhoto = useCallback(async () => {
+    const src = story.images[imageIndex].src;
+    const extension = (src.match(/\.(jpe?g|png|gif|webp)$/i)?.[1] ?? "jpg").toLowerCase();
+    const slug = story.url.split("/").pop() || "photo";
+    const filename = `${slug}-${pad(imageIndex + 1)}.${extension}`;
+    setDownloading(true);
+    try {
+      const response = await fetch(src);
+      if (!response.ok) throw new Error(String(response.status));
+      const url = URL.createObjectURL(await response.blob());
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 10000);
+    } catch {
+      window.open(src, "_blank", "noopener");
+    } finally {
+      setDownloading(false);
+    }
+  }, [imageIndex, story]);
 
   const previous = useCallback(() => {
     setImageIndex((current) => (current - 1 + story.images.length) % story.images.length);
@@ -638,6 +665,16 @@ function StoryLightbox({ story, onClose }: { story: Story; onClose: () => void }
           </span>
         </div>
         <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={downloadPhoto}
+            disabled={downloading}
+            className="flex items-center gap-1 font-proxima-condensed text-[11px] font-bold uppercase tracking-[0.12em] text-white/70 transition-colors hover:text-accent disabled:opacity-50"
+            aria-label={`Download photograph ${imageIndex + 1} in full resolution`}
+          >
+            {downloading ? "Downloading…" : "Download"}
+            <ArrowDown size={13} strokeWidth={1.5} />
+          </button>
           <a
             href={story.url}
             target="_blank"
