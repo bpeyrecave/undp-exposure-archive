@@ -1,11 +1,13 @@
 import { useMemo, useState } from "react";
-import { ArrowDown, ArrowUpRight, X } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
-import { downloadPhoto, formatDate, pad, sized, type GalleryItem } from "./shared";
+import { FilterDropdown } from "./FilterDropdown";
+import { downloadPhoto, formatDate, pad, REGIONS, sized, type GalleryItem, type Region } from "./shared";
 import { usePicks, type Pick } from "./picks";
 
-// Best photos (editors' picks): a photo grid filtered by collection. `collection` comes from
-// the address (#picks/<id>) so each collection has its own shareable link.
+// Best photos (editors' picks): a photo grid filtered by region and collection.
+// `collection` comes from the address (#picks/<id>) so each collection has its
+// own shareable link.
 export function PicksView({
   collection,
   onSelectCollection,
@@ -16,48 +18,71 @@ export function PicksView({
   onOpen: (items: GalleryItem[], index: number, heading: string) => void;
 }) {
   const { picks, loaded, curator, removeCollection } = usePicks();
+  const [activeRegion, setActiveRegion] = useState<Region>("All");
   const active = picks.collections.find((c) => c.id === collection) ?? null;
+
+  const inRegion = (pick: Pick, region: Region) => region === "All" || pick.region === region;
+  const inCollection = (pick: Pick, id: string | null) => !id || pick.collections.includes(id);
 
   const shown = useMemo(
     () =>
       picks.picks
-        .filter((pick) => !active || pick.collections.includes(active.id))
+        .filter((pick) => inRegion(pick, activeRegion) && inCollection(pick, active?.id ?? null))
         .sort((a, b) => b.addedAt.localeCompare(a.addedAt)),
-    [picks, active],
+    [picks, active, activeRegion],
   );
   const heading = active ? `Best photos · ${active.name}` : "Best photos";
 
   return (
     <>
       <div className="flex items-center justify-between border-b border-border py-3 sm:py-3.5">
-        <nav aria-label="Filter picks by collection" className="flex min-w-0 items-center gap-1 overflow-x-auto pr-3">
-          <CollectionTab label="All" count={picks.picks.length} active={!active} onClick={() => onSelectCollection(null)} />
-          {picks.collections.map((c) => (
-            <span key={c.id} className="flex shrink-0 items-center">
-              <CollectionTab
-                label={c.name}
-                count={picks.picks.filter((pick) => pick.collections.includes(c.id)).length}
-                active={active?.id === c.id}
-                onClick={() => onSelectCollection(c.id)}
-              />
-              {curator && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (confirm(`Delete the collection "${c.name}"? Its photos stay in Best photos.`)) {
-                      removeCollection(c.id);
-                      if (active?.id === c.id) onSelectCollection(null);
-                    }
-                  }}
-                  className="-ml-2 mr-1 p-1 text-muted-foreground hover:text-foreground"
-                  aria-label={`Delete collection ${c.name}`}
-                >
-                  <X size={12} />
-                </button>
-              )}
-            </span>
+        <nav aria-label="Filter best photos by region" className="flex min-w-0 items-center gap-1 overflow-x-auto pr-3">
+          {REGIONS.map((region) => (
+            <button
+              key={region}
+              type="button"
+              onClick={() => setActiveRegion(region)}
+              className={`flex shrink-0 items-baseline gap-1.5 px-3 py-1.5 font-proxima-condensed text-sm font-bold uppercase tracking-[0.12em] transition-colors first:pl-0 sm:px-3.5 sm:py-2 ${
+                activeRegion === region ? "text-accent" : "text-muted-foreground hover:text-foreground"
+              }`}
+              aria-pressed={activeRegion === region}
+            >
+              {region === "GLOBAL" ? "Global" : region}
+              <span className="text-[10px] font-semibold opacity-65">
+                {pad(picks.picks.filter((pick) => inRegion(pick, region) && inCollection(pick, active?.id ?? null)).length)}
+              </span>
+            </button>
           ))}
         </nav>
+
+        <div className="flex shrink-0 items-center gap-2 pl-2">
+          {curator && active && (
+            <button
+              type="button"
+              onClick={() => {
+                if (confirm(`Delete the collection "${active.name}"? Its photos stay in Best photos.`)) {
+                  removeCollection(active.id);
+                  onSelectCollection(null);
+                }
+              }}
+              className="font-proxima-condensed text-[11px] font-bold uppercase tracking-[0.12em] text-muted-foreground hover:text-foreground"
+            >
+              Delete collection
+            </button>
+          )}
+          <FilterDropdown
+            label="Collection"
+            allLabel="All collections"
+            options={picks.collections.map((c) => ({
+              value: c.id,
+              label: c.name,
+              count: picks.picks.filter((pick) => inRegion(pick, activeRegion) && pick.collections.includes(c.id)).length,
+            }))}
+            allCount={picks.picks.filter((pick) => inRegion(pick, activeRegion)).length}
+            selected={active?.id ?? "All"}
+            onSelect={(value) => onSelectCollection(value === "All" ? null : value)}
+          />
+        </div>
       </div>
 
       {!loaded ? (
@@ -69,10 +94,12 @@ export function PicksView({
       ) : shown.length === 0 ? (
         <div className="my-16 flex flex-col items-center justify-center border border-dashed border-border px-6 py-20 text-center">
           <p className="font-card-title text-lg font-semibold text-foreground">
-            {active ? `No photos in ${active.name} yet` : "No best photos yet"}
+            {picks.picks.length === 0 ? "No best photos yet" : "No best photos match these filters"}
           </p>
           <p className="mt-2 max-w-md text-sm text-muted-foreground">
-            {curator
+            {picks.picks.length > 0
+              ? "Try another region or collection."
+              : curator
               ? "Open any story, then use the Pick button in the photo gallery to add photos here."
               : "Selected photos from UNDP's Exposure stories will appear here."}
           </p>
@@ -85,22 +112,6 @@ export function PicksView({
         </div>
       )}
     </>
-  );
-}
-
-function CollectionTab({ label, count, active, onClick }: { label: string; count: number; active: boolean; onClick: () => void }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`flex shrink-0 items-baseline gap-1.5 px-3 py-1.5 font-proxima-condensed text-sm font-bold uppercase tracking-[0.12em] transition-colors first:pl-0 sm:px-3.5 sm:py-2 ${
-        active ? "text-accent" : "text-muted-foreground hover:text-foreground"
-      }`}
-      aria-pressed={active}
-    >
-      {label}
-      <span className="text-[10px] font-semibold opacity-65">{pad(count)}</span>
-    </button>
   );
 }
 

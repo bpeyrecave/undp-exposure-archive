@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+import { FilterDropdown } from "./FilterDropdown";
 import { Lightbox } from "./Lightbox";
 import { CuratorBar, PicksView } from "./PicksView";
 import { PicksProvider, usePicks } from "./picks";
-import { formatDate, pad, sized, storyItems, type GalleryItem, type Region, type Story } from "./shared";
+import { formatDate, pad, REGIONS, sized, storyItems, type GalleryItem, type Region, type Story } from "./shared";
 
 interface ArchiveData {
   updated: string;
@@ -19,7 +20,6 @@ interface OpenGallery {
   numberInStory: boolean;
 }
 
-const REGIONS: Region[] = ["All", "RBA", "RBAS", "RBEC", "RBLAC", "RBAP", "GLOBAL"];
 const PAGE_SIZE = 30;
 const MAX_DOTS = 16;
 
@@ -207,11 +207,13 @@ function Archive() {
           </nav>
 
           <div className="shrink-0 pl-2">
-            <YearDropdown
-              years={availableYears}
-              selectedYear={selectedYear}
-              onSelectYear={setSelectedYear}
-              getYearCount={getYearCount}
+            <FilterDropdown
+              label="Year"
+              allLabel="All years"
+              options={availableYears.filter((year) => year !== "All").map((year) => ({ value: year, label: year, count: getYearCount(year) }))}
+              allCount={getYearCount("All")}
+              selected={selectedYear}
+              onSelect={setSelectedYear}
             />
           </div>
         </div>
@@ -292,128 +294,6 @@ function Archive() {
       </AnimatePresence>
 
       <CuratorBar />
-    </div>
-  );
-}
-
-function YearDropdown({
-  years,
-  selectedYear,
-  onSelectYear,
-  getYearCount,
-}: {
-  years: string[];
-  selectedYear: string;
-  onSelectYear: (year: string) => void;
-  getYearCount: (year: string) => number;
-}) {
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    }
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        setIsOpen(false);
-      }
-    }
-
-    if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-      document.addEventListener("keydown", handleKeyDown);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [isOpen]);
-
-  return (
-    <div ref={dropdownRef} className="relative">
-      <button
-        type="button"
-        onClick={() => setIsOpen((prev) => !prev)}
-        aria-haspopup="listbox"
-        aria-expanded={isOpen}
-        aria-label={`Filter archive by year. Currently selected: ${selectedYear === "All" ? "All years" : selectedYear}`}
-        className={`flex items-center gap-2 border px-3 py-1.5 font-proxima-condensed text-xs font-bold uppercase tracking-[0.14em] transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring sm:px-3.5 sm:py-2 ${
-          isOpen
-            ? "border-accent bg-card text-foreground shadow-lg"
-            : selectedYear !== "All"
-            ? "border-accent bg-card text-accent hover:border-accent"
-            : "border-border bg-card/60 text-muted-foreground hover:border-white/30 hover:bg-card hover:text-foreground"
-        }`}
-      >
-        <span className="text-[10px] font-semibold tracking-[0.16em] text-white/50">YEAR</span>
-        <span className={selectedYear !== "All" ? "font-extrabold text-accent" : "text-foreground"}>
-          {selectedYear === "All" ? "All Years" : selectedYear}
-        </span>
-        <ChevronDown
-          size={14}
-          strokeWidth={2}
-          className={`transition-transform duration-200 ${
-            isOpen ? "rotate-180 text-accent" : "text-muted-foreground"
-          }`}
-        />
-      </button>
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -4, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -4, scale: 0.98 }}
-            transition={{ duration: 0.15, ease: "easeOut" }}
-            role="listbox"
-            aria-label="Select year"
-            className="absolute right-0 top-full z-40 mt-1.5 max-h-[70vh] min-w-[170px] overflow-y-auto border border-border bg-[#1c2532] py-1 shadow-2xl backdrop-blur-md"
-          >
-            <div className="border-b border-white/10 px-3 py-1.5 font-proxima-condensed text-[10px] font-bold uppercase tracking-[0.18em] text-white/40">
-              Filter by year
-            </div>
-            {years.map((year) => {
-              const isSelected = selectedYear === year;
-              const count = getYearCount(year);
-
-              return (
-                <button
-                  key={year}
-                  type="button"
-                  role="option"
-                  aria-selected={isSelected}
-                  onClick={() => {
-                    onSelectYear(year);
-                    setIsOpen(false);
-                  }}
-                  className={`flex w-full items-center justify-between px-3 py-2 font-proxima-condensed text-xs font-bold uppercase tracking-[0.12em] transition-colors ${
-                    isSelected
-                      ? "bg-accent/15 text-accent font-extrabold"
-                      : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
-                  }`}
-                >
-                  <span className="flex items-center gap-2">
-                    <span
-                      className={`h-1.5 w-1.5 transition-opacity ${
-                        isSelected ? "bg-accent opacity-100" : "opacity-0"
-                      }`}
-                      aria-hidden="true"
-                    />
-                    {year === "All" ? "All Years" : year}
-                  </span>
-                  <span className="font-mono text-[10px] font-semibold opacity-60">
-                    {pad(count)}
-                  </span>
-                </button>
-              );
-            })}
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }

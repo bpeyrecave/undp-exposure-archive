@@ -1,5 +1,7 @@
 export type Region = "All" | "RBA" | "RBAS" | "RBEC" | "RBLAC" | "RBAP" | "GLOBAL";
 
+export const REGIONS: Region[] = ["All", "RBA", "RBAS", "RBEC", "RBLAC", "RBAP", "GLOBAL"];
+
 export interface Photo {
   src: string;
   alt: string;
