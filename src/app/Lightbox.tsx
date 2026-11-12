@@ -5,7 +5,7 @@ import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import { downloadPhoto, pad, sized, type GalleryItem } from "./shared";
 import { usePicks } from "./picks";
 
-// Full-screen gallery for a story's photos or a set of editors' picks.
+// Full-screen gallery for a story's photos or a set of best photos.
 export function Lightbox({
   items,
   startIndex = 0,

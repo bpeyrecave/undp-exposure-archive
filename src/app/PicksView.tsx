@@ -4,7 +4,7 @@ import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import { downloadPhoto, formatDate, pad, sized, type GalleryItem } from "./shared";
 import { usePicks, type Pick } from "./picks";
 
-// Editors' picks: a photo grid filtered by collection. `collection` comes from
+// Best photos (editors' picks): a photo grid filtered by collection. `collection` comes from
 // the address (#picks/<id>) so each collection has its own shareable link.
 export function PicksView({
   collection,
@@ -25,13 +25,13 @@ export function PicksView({
         .sort((a, b) => b.addedAt.localeCompare(a.addedAt)),
     [picks, active],
   );
-  const heading = active ? `Editors' picks · ${active.name}` : "Editors' picks";
+  const heading = active ? `Best photos · ${active.name}` : "Best photos";
 
   return (
     <>
       <div className="flex items-center justify-between border-b border-border py-3 sm:py-3.5">
         <nav aria-label="Filter picks by collection" className="flex min-w-0 items-center gap-1 overflow-x-auto pr-3">
-          <CollectionTab label="All picks" count={picks.picks.length} active={!active} onClick={() => onSelectCollection(null)} />
+          <CollectionTab label="All" count={picks.picks.length} active={!active} onClick={() => onSelectCollection(null)} />
           {picks.collections.map((c) => (
             <span key={c.id} className="flex shrink-0 items-center">
               <CollectionTab
@@ -44,7 +44,7 @@ export function PicksView({
                 <button
                   type="button"
                   onClick={() => {
-                    if (confirm(`Delete the collection "${c.name}"? Its photos stay in All picks.`)) {
+                    if (confirm(`Delete the collection "${c.name}"? Its photos stay in Best photos.`)) {
                       removeCollection(c.id);
                       if (active?.id === c.id) onSelectCollection(null);
                     }
@@ -69,7 +69,7 @@ export function PicksView({
       ) : shown.length === 0 ? (
         <div className="my-16 flex flex-col items-center justify-center border border-dashed border-border px-6 py-20 text-center">
           <p className="font-card-title text-lg font-semibold text-foreground">
-            {active ? `No photos in ${active.name} yet` : "No editors' picks yet"}
+            {active ? `No photos in ${active.name} yet` : "No best photos yet"}
           </p>
           <p className="mt-2 max-w-md text-sm text-muted-foreground">
             {curator
