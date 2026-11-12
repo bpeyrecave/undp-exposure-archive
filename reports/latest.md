@@ -1,51 +1,51 @@
 # Collection report
 
-Updated: 2026-11-12T13:05:47+00:00
+Updated: 2026-11-12T13:22:48+00:00
 
 - Accounts checked: 34
 - Stories in archive: 2301
-- Photos in archive: 2313
-- Stories with their full photo set: 1 (collected by hand: 1)
-- Stories with cover photo only (story page not accessible): 2300
+- Photos in archive: 2772
+- Stories with their full photo set: 27 (collected by hand: 27)
+- Stories with cover photo only (story page not accessible): 2274
 - Translations / duplicates removed: 716
 
 ## Accounts
 
 | Account | Status | Stories | Full photo sets | Cover only | Blocked pages | Notes |
 |---|---|---|---|---|---|---|
-| [UNDP Afghanistan](https://undpafghanistan.exposure.co/) | ok | 54 | 0 | 54 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Arab States](https://undparabic.exposure.co/) | ok | 114 | 0 | 114 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Bangladesh](https://bdundp.exposure.co/) | ok | 4 | 0 | 4 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Afghanistan](https://undpafghanistan.exposure.co/) | ok | 54 | 1 | 53 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Arab States](https://undparabic.exposure.co/) | ok | 114 | 1 | 113 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Bangladesh](https://bdundp.exposure.co/) | ok | 4 | 1 | 3 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Bhutan](https://undp-bhutan.exposure.co/) | ok | 43 | 0 | 43 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [PNUD Bolivia](https://pnudbolivia.exposure.co/) | ok | 40 | 0 | 40 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Cambodia](https://undpcambodia.exposure.co/) | ok | 59 | 0 | 59 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; nbsp-1: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
-| [UNDP China](https://undpinchina.exposure.co/) | ok | 58 | 0 | 58 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; fostering-youth-participation-and-accelerating-breakthroughs-solutions-for-sdgs: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; youth-passion-for-action: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
-| [PNUD Colombia](https://pnudcolombia.exposure.co/) | ok | 239 | 0 | 239 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP China](https://undpinchina.exposure.co/) | ok | 58 | 1 | 57 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; fostering-youth-participation-and-accelerating-breakthroughs-solutions-for-sdgs: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; youth-passion-for-action: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
+| [PNUD Colombia](https://pnudcolombia.exposure.co/) | ok | 239 | 2 | 237 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Djibouti](https://undpdjibouti.exposure.co/) | ok | 4 | 0 | 4 | 3 | women-real-drivers-of-resilience-and-economic-recovery: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; les-femmes-moteurs-de-la-resilience-et-du-relevement-economique: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [PNUD El Salvador](https://pnudsv.exposure.co/) | ok | 7 | 0 | 7 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Europe and Central Asia](https://undpeurasia.exposure.co/) | ok | 82 | 0 | 82 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [PNUD Guatemala](https://pnudguatemala.exposure.co/) | ok | 58 | 0 | 58 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [PNUD Guatemala](https://pnudguatemala.exposure.co/) | ok | 58 | 3 | 55 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP India](https://undp-india.exposure.co/) | ok | 31 | 0 | 31 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; breaking-free-women-champions-end-manual-scavenging: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; caring-for-indias-infants-reducing-child-mortality: no photos found, skipped. |
 | [UNDP Kazakhstan](https://undpkaz.exposure.co/) | ok | 65 | 0 | 65 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Kosovo](https://undpkosovo.exposure.co/) | ok | 141 | 0 | 141 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Kosovo](https://undpkosovo.exposure.co/) | ok | 141 | 1 | 140 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Maldives](https://undpmv.exposure.co/) | ok | 26 | 0 | 26 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; a-journey-towards-safer-secure-islands: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [PNUD Mali](https://pnudmali.exposure.co/) | ok | 15 | 0 | 15 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Mauritius & Seychelles](https://undpmauritiusandseychelles.exposure.co/) | ok | 7 | 0 | 7 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Moldova](https://undpmoldova.exposure.co/) | ok | 116 | 0 | 116 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Nepal](https://undpnepal.exposure.co/) | ok | 58 | 0 | 58 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Mauritius & Seychelles](https://undpmauritiusandseychelles.exposure.co/) | ok | 7 | 1 | 6 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Moldova](https://undpmoldova.exposure.co/) | ok | 116 | 3 | 113 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Nepal](https://undpnepal.exposure.co/) | ok | 58 | 1 | 57 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Pakistan](https://undp-pakistan.exposure.co/) | ok | 86 | 1 | 85 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [PNUD Perú](https://pnudperu.exposure.co/) | no public stories | 0 | 0 | 0 | 0 | The site's sitemap lists no stories (they may be unlisted, reachable only by direct link). |
 | [UNDP South Sudan](https://undpsouthsudan.exposure.co/) | ok | 13 | 0 | 13 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; wrestlers-use-their-passion-for-the-sport-to-promote-peace-this-national-unity-day: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
-| [UNDP Sri Lanka](https://undpsrilanka.exposure.co/) | ok | 244 | 0 | 244 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Sri Lanka](https://undpsrilanka.exposure.co/) | ok | 244 | 2 | 242 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Sudan](https://undpsudan.exposure.co/) | ok | 21 | 0 | 21 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Türkiye](https://undpturkiye.exposure.co/) | ok | 232 | 0 | 232 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Ukraine](https://undpukraine.exposure.co/) | ok | 257 | 0 | 257 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Ukraine](https://undpukraine.exposure.co/) | ok | 257 | 1 | 256 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Yemen](https://undpyemen.exposure.co/) | ok | 95 | 0 | 95 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; yemeni-grapes-ar: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
-| [UNDP Zambia](https://undpinzambia.exposure.co/) | ok | 30 | 0 | 30 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Zambia](https://undpinzambia.exposure.co/) | ok | 30 | 4 | 26 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Asia and the Pacific](https://undpasiapac.exposure.co/) | ok | 32 | 0 | 32 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; world-tsunami-awareness-day-2025-preparedness-saves-lives: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; for-the-love-of-peat-and-peaks: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [PNUD América Latina y el Caribe](https://undplac.exposure.co/) | ok | 114 | 0 | 114 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Climate](https://undp-climate.exposure.co/) | ok | 340 | 0 | 340 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Planet](https://undp-nature.exposure.co/) | ok | 329 | 0 | 329 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Planet](https://undp-nature.exposure.co/) | ok | 329 | 4 | 325 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Accelerator Labs](https://undpacceleratorlabs.exposure.co/) | ok | 3 | 0 | 3 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 
 ## Translations / duplicates removed
