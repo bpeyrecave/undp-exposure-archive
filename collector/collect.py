@@ -187,6 +187,23 @@ def dedupe(stories, sources_by_account):
     return kept, dropped
 
 
+def clean_manual_photos(photos):
+    """Keep the story's own photos: one cover, never the "Read ..." thumbnails of other stories."""
+    kept, seen, cover_seen = [], set(), False
+    for p in photos:
+        src = base_image(p.get("src") or "")
+        alt = p.get("alt") or ""
+        if not src or src in seen or alt.startswith("Read "):
+            continue
+        if "/cover-photo/" in src:
+            if cover_seen:
+                continue
+            cover_seen = True
+        seen.add(src)
+        kept.append({"src": src, "alt": "" if alt.endswith(" - cover photo") else alt})
+    return kept
+
+
 def load_manual():
     """Photo sets captured by hand (public/collect.html), newest capture of each story wins."""
     manual = {}
@@ -198,9 +215,10 @@ def load_manual():
             continue
         for e in entries:
             url = (e.get("url") or "").lower().rstrip("/")
-            photos = [{"src": base_image(p["src"]), "alt": p.get("alt") or ""} for p in e.get("photos", []) if p.get("src")]
+            photos = clean_manual_photos(e.get("photos", []))
+            title = re.sub(r"\s+by .+ on Exposure$", "", (e.get("title") or "").strip())
             if url and photos and e.get("collectedAt", "") >= manual.get(url, {}).get("collectedAt", ""):
-                manual[url] = {**e, "photos": photos}
+                manual[url] = {**e, "title": title or None, "photos": photos}
     return manual
 
 

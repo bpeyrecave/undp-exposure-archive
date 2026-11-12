@@ -127,10 +127,10 @@
         "for(const m of md.matchAll(/!\\[([^\\]]*)\\]\\(([^)\\s]+)\\)/g))add(m[2],m[1]);" +
         "const f=md.split('## Footnotes')[1];if(f){const c=f.match(/^.*\\b(Photos?|Photography|Fotos?|Fotograf\\u00edas?|Cr\\u00e9dits? photos?)\\b[^\\n]{0,200}$/mi);if(c)credits=c[0].trim().slice(0,200)}" +
       "}else{" +
-        "document.querySelectorAll('img').forEach(i=>add(i.currentSrc||i.src,i.alt));" +
+        "let cover=false;document.querySelectorAll('img').forEach(i=>{const s=i.currentSrc||i.src,a=i.alt||'';if(/^Read /.test(a)||(i.closest('a[href]')&&i.closest('a').pathname!==location.pathname))return;if(s.includes('/cover-photo/')){if(cover)return;cover=true}add(s,a)});" +
       "}" +
       "if(!photos.length){alert('No photos found on this page.');return}" +
-      "const data={url:location.origin.toLowerCase()+p,title:title.replace(/ [-\\u2013] .*$/,'').trim(),date,credits,photos,source:md?'md':'page',collectedAt:new Date().toISOString()};" +
+      "const data={url:location.origin.toLowerCase()+p,title:title.replace(/ [-\\u2013] .*$/,'').replace(/\\s+by .+ on Exposure$/,'').trim(),date,credits,photos,source:md?'md':'page',collectedAt:new Date().toISOString()};" +
       "window.open(T+'#add='+encodeURIComponent(JSON.stringify(data)),'undp-archive-collector');" +
     "})()";
   }
