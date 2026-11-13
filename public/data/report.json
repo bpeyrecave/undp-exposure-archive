@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-13T16:41:37+00:00",
+ "updated": "2026-11-13T16:50:52+00:00",
  "totals": {
   "accounts": 34,
   "stories": 2301,
-  "photos": 4040,
-  "fullPhotoSets": 127,
-  "coverOnly": 2174,
+  "photos": 5362,
+  "fullPhotoSets": 227,
+  "coverOnly": 2074,
   "duplicatesRemoved": 716,
-  "collectedByHand": 127
+  "collectedByHand": 227
  },
  "sites": [
   {
@@ -16,13 +16,13 @@
    "url": "https://undpafghanistan.exposure.co/",
    "status": "ok",
    "stories": 54,
-   "fullPhotoSets": 10,
-   "coverOnly": 44,
+   "fullPhotoSets": 14,
+   "coverOnly": 40,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 10
+   "manual": 14
   },
   {
    "account": "undparabic",
@@ -30,13 +30,13 @@
    "url": "https://undparabic.exposure.co/",
    "status": "ok",
    "stories": 114,
-   "fullPhotoSets": 13,
-   "coverOnly": 101,
+   "fullPhotoSets": 17,
+   "coverOnly": 97,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 13
+   "manual": 17
   },
   {
    "account": "bdundp",
@@ -44,11 +44,11 @@
    "url": "https://bdundp.exposure.co/",
    "status": "ok",
    "stories": 4,
-   "fullPhotoSets": 3,
-   "coverOnly": 1,
+   "fullPhotoSets": 4,
+   "coverOnly": 0,
    "blockedPages": 1,
    "notes": [],
-   "manual": 3
+   "manual": 4
   },
   {
    "account": "undp-bhutan",
@@ -56,13 +56,13 @@
    "url": "https://undp-bhutan.exposure.co/",
    "status": "ok",
    "stories": 43,
-   "fullPhotoSets": 2,
-   "coverOnly": 41,
+   "fullPhotoSets": 3,
+   "coverOnly": 40,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 2
+   "manual": 3
   },
   {
    "account": "pnudbolivia",
@@ -70,13 +70,13 @@
    "url": "https://pnudbolivia.exposure.co/",
    "status": "ok",
    "stories": 40,
-   "fullPhotoSets": 1,
-   "coverOnly": 39,
+   "fullPhotoSets": 4,
+   "coverOnly": 36,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 1
+   "manual": 4
   },
   {
    "account": "undpcambodia",
@@ -98,15 +98,15 @@
    "url": "https://undpinchina.exposure.co/",
    "status": "ok",
    "stories": 58,
-   "fullPhotoSets": 3,
-   "coverOnly": 55,
+   "fullPhotoSets": 4,
+   "coverOnly": 54,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.",
     "fostering-youth-participation-and-accelerating-breakthroughs-solutions-for-sdgs: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.",
     "youth-passion-for-action: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped."
    ],
-   "manual": 3
+   "manual": 4
   },
   {
    "account": "pnudcolombia",
@@ -114,13 +114,13 @@
    "url": "https://pnudcolombia.exposure.co/",
    "status": "ok",
    "stories": 239,
-   "fullPhotoSets": 9,
-   "coverOnly": 230,
+   "fullPhotoSets": 15,
+   "coverOnly": 224,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 9
+   "manual": 15
   },
   {
    "account": "undpdjibouti",
@@ -143,22 +143,8 @@
    "url": "https://pnudsv.exposure.co/",
    "status": "ok",
    "stories": 7,
-   "fullPhotoSets": 1,
-   "coverOnly": 6,
-   "blockedPages": 3,
-   "notes": [
-    "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
-   ],
-   "manual": 1
-  },
-  {
-   "account": "undpeurasia",
-   "office": "UNDP Europe and Central Asia",
-   "url": "https://undpeurasia.exposure.co/",
-   "status": "ok",
-   "stories": 82,
    "fullPhotoSets": 2,
-   "coverOnly": 80,
+   "coverOnly": 5,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -166,18 +152,32 @@
    "manual": 2
   },
   {
+   "account": "undpeurasia",
+   "office": "UNDP Europe and Central Asia",
+   "url": "https://undpeurasia.exposure.co/",
+   "status": "ok",
+   "stories": 82,
+   "fullPhotoSets": 3,
+   "coverOnly": 79,
+   "blockedPages": 3,
+   "notes": [
+    "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
+   ],
+   "manual": 3
+  },
+  {
    "account": "pnudguatemala",
    "office": "PNUD Guatemala",
    "url": "https://pnudguatemala.exposure.co/",
    "status": "ok",
    "stories": 58,
-   "fullPhotoSets": 4,
-   "coverOnly": 54,
+   "fullPhotoSets": 7,
+   "coverOnly": 51,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 4
+   "manual": 7
   },
   {
    "account": "undp-india",
@@ -213,13 +213,13 @@
    "url": "https://undpkosovo.exposure.co/",
    "status": "ok",
    "stories": 141,
-   "fullPhotoSets": 4,
-   "coverOnly": 137,
+   "fullPhotoSets": 7,
+   "coverOnly": 134,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 4
+   "manual": 7
   },
   {
    "account": "undpmv",
@@ -297,13 +297,13 @@
    "url": "https://undp-pakistan.exposure.co/",
    "status": "ok",
    "stories": 86,
-   "fullPhotoSets": 1,
-   "coverOnly": 85,
+   "fullPhotoSets": 4,
+   "coverOnly": 82,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 1
+   "manual": 4
   },
   {
    "account": "pnudperu",
@@ -338,13 +338,13 @@
    "url": "https://undpsrilanka.exposure.co/",
    "status": "ok",
    "stories": 244,
-   "fullPhotoSets": 18,
-   "coverOnly": 226,
+   "fullPhotoSets": 23,
+   "coverOnly": 221,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 18
+   "manual": 23
   },
   {
    "account": "undpsudan",
@@ -352,13 +352,13 @@
    "url": "https://undpsudan.exposure.co/",
    "status": "ok",
    "stories": 21,
-   "fullPhotoSets": 3,
-   "coverOnly": 18,
+   "fullPhotoSets": 7,
+   "coverOnly": 14,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 3
+   "manual": 7
   },
   {
    "account": "undpturkiye",
@@ -366,13 +366,13 @@
    "url": "https://undpturkiye.exposure.co/",
    "status": "ok",
    "stories": 232,
-   "fullPhotoSets": 2,
-   "coverOnly": 230,
+   "fullPhotoSets": 4,
+   "coverOnly": 228,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 2
+   "manual": 4
   },
   {
    "account": "undpukraine",
@@ -380,13 +380,13 @@
    "url": "https://undpukraine.exposure.co/",
    "status": "ok",
    "stories": 257,
-   "fullPhotoSets": 20,
-   "coverOnly": 237,
+   "fullPhotoSets": 38,
+   "coverOnly": 219,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 20
+   "manual": 38
   },
   {
    "account": "undpyemen",
@@ -409,13 +409,13 @@
    "url": "https://undpinzambia.exposure.co/",
    "status": "ok",
    "stories": 30,
-   "fullPhotoSets": 6,
-   "coverOnly": 24,
+   "fullPhotoSets": 7,
+   "coverOnly": 23,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 6
+   "manual": 7
   },
   {
    "account": "undpasiapac",
@@ -423,14 +423,15 @@
    "url": "https://undpasiapac.exposure.co/",
    "status": "ok",
    "stories": 32,
-   "fullPhotoSets": 0,
-   "coverOnly": 32,
+   "fullPhotoSets": 1,
+   "coverOnly": 31,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.",
     "world-tsunami-awareness-day-2025-preparedness-saves-lives: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.",
     "for-the-love-of-peat-and-peaks: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped."
-   ]
+   ],
+   "manual": 1
   },
   {
    "account": "undplac",
@@ -438,12 +439,13 @@
    "url": "https://undplac.exposure.co/",
    "status": "ok",
    "stories": 114,
-   "fullPhotoSets": 0,
-   "coverOnly": 114,
+   "fullPhotoSets": 1,
+   "coverOnly": 113,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
-   ]
+   ],
+   "manual": 1
   },
   {
    "account": "undp-climate",
@@ -464,13 +466,13 @@
    "url": "https://undp-nature.exposure.co/",
    "status": "ok",
    "stories": 329,
-   "fullPhotoSets": 13,
-   "coverOnly": 316,
+   "fullPhotoSets": 50,
+   "coverOnly": 279,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 13
+   "manual": 50
   },
   {
    "account": "undpacceleratorlabs",
