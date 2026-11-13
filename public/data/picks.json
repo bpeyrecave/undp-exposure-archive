@@ -2,60 +2,24 @@
  "updated": "2026-11-13T17:31:32.715Z",
  "collections": [
   {
-   "id": "portraits",
-   "name": "Portraits"
-  },
-  {
-   "id": "photos-of-the-year",
-   "name": "Photos of the Year"
-  },
-  {
-   "id": "nature-sustainability",
-   "name": "Nature & Sustainability"
-  },
-  {
-   "id": "landscapes",
-   "name": "Landscapes"
-  },
-  {
-   "id": "undp-in-the-field",
-   "name": "UNDP in the Field"
+   "id": "cooking-fuel",
+   "name": "Cooking Fuel"
   },
   {
    "id": "crisis",
    "name": "Crisis"
   },
   {
-   "id": "sdgs",
-   "name": "SDGs"
-  },
-  {
-   "id": "livelihoods",
-   "name": "Livelihoods"
-  },
-  {
-   "id": "cooking-fuel",
-   "name": "Cooking Fuel"
-  },
-  {
-   "id": "water",
-   "name": "Water"
-  },
-  {
    "id": "disabilities",
    "name": "Disabilities"
   },
   {
-   "id": "nature-planet",
-   "name": "Nature & Planet"
-  },
-  {
-   "id": "indigenous-knowledge",
-   "name": "Indigenous Knowledge"
-  },
-  {
    "id": "displacement",
    "name": "Displacement"
+  },
+  {
+   "id": "education",
+   "name": "Education"
   },
   {
    "id": "gender-equality",
@@ -66,8 +30,40 @@
    "name": "Health"
   },
   {
-   "id": "education",
-   "name": "Education"
+   "id": "indigenous-knowledge",
+   "name": "Indigenous Knowledge"
+  },
+  {
+   "id": "landscapes",
+   "name": "Landscapes"
+  },
+  {
+   "id": "livelihoods",
+   "name": "Livelihoods"
+  },
+  {
+   "id": "nature-planet",
+   "name": "Nature & Planet"
+  },
+  {
+   "id": "photos-of-the-year",
+   "name": "Photos of the Year"
+  },
+  {
+   "id": "portraits",
+   "name": "Portraits"
+  },
+  {
+   "id": "sdgs",
+   "name": "SDGs"
+  },
+  {
+   "id": "undp-in-the-field",
+   "name": "UNDP in the Field"
+  },
+  {
+   "id": "water",
+   "name": "Water"
   }
  ],
  "picks": [
@@ -191,7 +187,7 @@
    "year": "2026",
    "credits": null,
    "collections": [
-    "nature-sustainability",
+    "nature-planet",
     "livelihoods"
    ],
    "addedAt": "2026-11-13T17:29:45.672Z"
@@ -372,7 +368,7 @@
    "year": "2026",
    "credits": null,
    "collections": [
-    "nature-sustainability",
+    "nature-planet",
     "livelihoods"
    ],
    "addedAt": "2026-11-13T17:24:46.561Z"
@@ -714,7 +710,7 @@
    "year": "2026",
    "credits": "Text by: Nancy Chege, Anna Lisa Jose, Andrea Egan. Header photo: Ogiek Peoples' community members in Kenya. Photo: Ogiek Peoples' Development Progam for UNDP Kenya",
    "collections": [
-    "nature-sustainability",
+    "nature-planet",
     "indigenous-knowledge"
    ],
    "addedAt": "2026-11-13T17:02:36.894Z"
@@ -1251,7 +1247,7 @@
    "credits": null,
    "collections": [
     "portraits",
-    "nature-sustainability"
+    "nature-planet"
    ],
    "addedAt": "2026-11-12T15:00:53.229Z"
   },
@@ -1615,7 +1611,7 @@
    "year": "2026",
    "credits": "Story by Ana Canestrelli, Andrea Egan, and Rissa Edoo.Header photo: Kiril Dobrev/Unsplash",
    "collections": [
-    "nature-sustainability"
+    "nature-planet"
    ],
    "addedAt": "2026-11-12T14:52:42.892Z"
   },

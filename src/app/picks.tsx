@@ -65,6 +65,7 @@ interface PicksContextValue {
   hasDraft: boolean;
   isPicked: (src: string) => boolean;
   pickOf: (src: string) => Pick | undefined;
+  pickedInStory: (storyUrl: string) => number;
   setPick: (item: GalleryItem, collections: string[] | null) => void;
   addCollection: (name: string) => string;
   removeCollection: (id: string) => void;
@@ -120,7 +121,12 @@ export function PicksProvider({ children }: { children: ReactNode }) {
   }, []);
 
   // Visitors always see the published picks; a curator sees their draft.
-  const picks = curator && draft ? draft : published;
+  // Collections are always listed A–Z.
+  const current = curator && draft ? draft : published;
+  const picks = useMemo(
+    () => ({ ...current, collections: [...current.collections].sort((a, b) => a.name.localeCompare(b.name)) }),
+    [current],
+  );
 
   const update = useCallback(
     (change: (file: PicksFile) => PicksFile) => {
@@ -138,6 +144,15 @@ export function PicksProvider({ children }: { children: ReactNode }) {
   );
 
   const bySrc = useMemo(() => new Map(picks.picks.map((pick) => [pick.src, pick])), [picks]);
+  // How many photos are picked from each story, keyed by story link.
+  const byStory = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const pick of picks.picks) {
+      const key = pick.storyUrl.toLowerCase();
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    }
+    return counts;
+  }, [picks]);
 
   const value: PicksContextValue = {
     picks,
@@ -146,6 +161,7 @@ export function PicksProvider({ children }: { children: ReactNode }) {
     hasDraft: curator && draft !== null,
     isPicked: (src) => bySrc.has(src),
     pickOf: (src) => bySrc.get(src),
+    pickedInStory: (storyUrl) => byStory.get(storyUrl.toLowerCase()) ?? 0,
     // collections === null removes the pick.
     setPick: (item, collections) =>
       update((file) => {

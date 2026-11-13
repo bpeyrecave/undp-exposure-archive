@@ -45,7 +45,7 @@ function Archive() {
   const [selectedYear, setSelectedYear] = useState<string>("All");
   const [gallery, setGallery] = useState<OpenGallery | null>(null);
   const [route, setRoute] = useState(readRoute);
-  const { picks, curator } = usePicks();
+  const { picks, curator, pickedInStory } = usePicks();
 
   useEffect(() => {
     const onHash = () => setRoute(readRoute());
@@ -263,6 +263,7 @@ function Archive() {
                   key={story.id}
                   story={story}
                   featured={activeRegion === "All" && selectedYear === "All" && index === 0}
+                  picked={curator ? pickedInStory(story.url) : 0}
                   onOpen={() => setGallery({ items: storyItems(story), index: 0, numberInStory: true })}
                 />
               ))}
@@ -301,10 +302,12 @@ function Archive() {
 function StoryCard({
   story,
   featured,
+  picked,
   onOpen,
 }: {
   story: Story;
   featured: boolean;
+  picked: number;
   onOpen: () => void;
 }) {
   const [hovered, setHovered] = useState(false);
@@ -380,6 +383,12 @@ function StoryCard({
       <div className="absolute left-4 top-4 flex items-center gap-2 font-proxima-condensed text-[11px] font-bold uppercase tracking-[0.14em] text-white sm:left-5 sm:top-5">
         <span className="bg-accent px-2 py-0.5 text-accent-foreground font-extrabold">{story.region}</span>
         <span className="drop-shadow-md font-semibold tracking-[0.12em]">{formatDate(story.date)}</span>
+        {/* Curator only: this story already has picked photos. */}
+        {picked > 0 && (
+          <span className="flex items-center gap-1 border border-accent bg-black/50 px-2 py-0.5 text-accent backdrop-blur-sm" title="Photos from this story are already in Best photos for social">
+            ★ {picked} picked
+          </span>
+        )}
       </div>
 
       <a
