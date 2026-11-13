@@ -1,6 +1,6 @@
 # Collection report
 
-Updated: 2026-11-13T16:50:52+00:00
+Updated: 2026-11-13T17:34:36+00:00
 
 - Accounts checked: 34
 - Stories in archive: 2301
@@ -15,7 +15,7 @@ Updated: 2026-11-13T16:50:52+00:00
 |---|---|---|---|---|---|---|
 | [UNDP Afghanistan](https://undpafghanistan.exposure.co/) | ok | 54 | 14 | 40 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Arab States](https://undparabic.exposure.co/) | ok | 114 | 17 | 97 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Bangladesh](https://bdundp.exposure.co/) | ok | 4 | 4 | 0 | 1 |  |
+| [UNDP Bangladesh](https://bdundp.exposure.co/) | ok | 4 | 4 | 0 | 0 |  |
 | [UNDP Bhutan](https://undp-bhutan.exposure.co/) | ok | 43 | 3 | 40 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [PNUD Bolivia](https://pnudbolivia.exposure.co/) | ok | 40 | 4 | 36 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Cambodia](https://undpcambodia.exposure.co/) | ok | 59 | 0 | 59 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; nbsp-1: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
@@ -42,7 +42,7 @@ Updated: 2026-11-13T16:50:52+00:00
 | [UNDP Ukraine](https://undpukraine.exposure.co/) | ok | 257 | 38 | 219 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Yemen](https://undpyemen.exposure.co/) | ok | 95 | 2 | 93 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; yemeni-grapes-ar: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [UNDP Zambia](https://undpinzambia.exposure.co/) | ok | 30 | 7 | 23 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Asia and the Pacific](https://undpasiapac.exposure.co/) | ok | 32 | 1 | 31 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; world-tsunami-awareness-day-2025-preparedness-saves-lives: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; for-the-love-of-peat-and-peaks: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
+| [UNDP Asia and the Pacific](https://undpasiapac.exposure.co/) | ok | 32 | 1 | 31 | 3 | world-tsunami-awareness-day-2025-preparedness-saves-lives: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; for-the-love-of-peat-and-peaks: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [PNUD América Latina y el Caribe](https://undplac.exposure.co/) | ok | 114 | 1 | 113 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Climate](https://undp-climate.exposure.co/) | ok | 340 | 0 | 340 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Planet](https://undp-nature.exposure.co/) | ok | 329 | 50 | 279 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |

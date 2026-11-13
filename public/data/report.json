@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T16:50:52+00:00",
+ "updated": "2026-11-13T17:34:36+00:00",
  "totals": {
   "accounts": 34,
   "stories": 2301,
@@ -46,7 +46,7 @@
    "stories": 4,
    "fullPhotoSets": 4,
    "coverOnly": 0,
-   "blockedPages": 1,
+   "blockedPages": 0,
    "notes": [],
    "manual": 4
   },
@@ -427,8 +427,8 @@
    "coverOnly": 31,
    "blockedPages": 3,
    "notes": [
-    "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.",
     "world-tsunami-awareness-day-2025-preparedness-saves-lives: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.",
+    "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.",
     "for-the-love-of-peat-and-peaks: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped."
    ],
    "manual": 1
