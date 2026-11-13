@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T15:08:19.243Z",
+ "updated": "2026-11-13T17:31:32.715Z",
  "collections": [
   {
    "id": "portraits",
@@ -44,9 +44,825 @@
   {
    "id": "disabilities",
    "name": "Disabilities"
+  },
+  {
+   "id": "nature-planet",
+   "name": "Nature & Planet"
+  },
+  {
+   "id": "indigenous-knowledge",
+   "name": "Indigenous Knowledge"
+  },
+  {
+   "id": "displacement",
+   "name": "Displacement"
+  },
+  {
+   "id": "gender-equality",
+   "name": "Gender Equality"
+  },
+  {
+   "id": "health",
+   "name": "Health"
+  },
+  {
+   "id": "education",
+   "name": "Education"
   }
  ],
  "picks": [
+  {
+   "src": "https://exposure.accelerator.net/production/photos/svafqghkjes9pj0pn57dne3cjjmz0dgfeud6/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/from-dust-to-water",
+   "storyTitle": "From Dust to Water",
+   "storyUrl": "https://undp-nature.exposure.co/from-dust-to-water",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-18",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, Rissa Edoo, and Otgonsuren Avirmed.Photos: Ganbayar Urtnasan/SGP Mongolia",
+   "collections": [
+    "portraits",
+    "indigenous-knowledge"
+   ],
+   "addedAt": "2026-11-13T17:30:59.317Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/y57zp1y8dokr1h7makn41964mmtzpz3p4od0/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/from-dust-to-water",
+   "storyTitle": "From Dust to Water",
+   "storyUrl": "https://undp-nature.exposure.co/from-dust-to-water",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-18",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, Rissa Edoo, and Otgonsuren Avirmed.Photos: Ganbayar Urtnasan/SGP Mongolia",
+   "collections": [
+    "landscapes",
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T17:30:49.371Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/81z2r1nofndq8j1djosb3k6tojrj0bbfjy6k/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/from-dust-to-water",
+   "storyTitle": "From Dust to Water",
+   "storyUrl": "https://undp-nature.exposure.co/from-dust-to-water",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-18",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, Rissa Edoo, and Otgonsuren Avirmed.Photos: Ganbayar Urtnasan/SGP Mongolia",
+   "collections": [],
+   "addedAt": "2026-11-13T17:30:43.828Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/0oko8pb3yngokeh4ob39hhxvxs8d6jhzri63/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/from-dust-to-water",
+   "storyTitle": "From Dust to Water",
+   "storyUrl": "https://undp-nature.exposure.co/from-dust-to-water",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-18",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, Rissa Edoo, and Otgonsuren Avirmed.Photos: Ganbayar Urtnasan/SGP Mongolia",
+   "collections": [
+    "indigenous-knowledge",
+    "photos-of-the-year",
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T17:30:32.734Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/b2pi1wct7bozz95fo0y1sny7zzuer04ucf9h/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/from-dust-to-water",
+   "storyTitle": "From Dust to Water",
+   "storyUrl": "https://undp-nature.exposure.co/from-dust-to-water",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-18",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, Rissa Edoo, and Otgonsuren Avirmed.Photos: Ganbayar Urtnasan/SGP Mongolia",
+   "collections": [
+    "portraits",
+    "indigenous-knowledge",
+    "gender-equality"
+   ],
+   "addedAt": "2026-11-13T17:30:19.857Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/a2qfpz5n7hkmhaouptx3sxbk7c0p6k613uv9/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/from-dust-to-water",
+   "storyTitle": "From Dust to Water",
+   "storyUrl": "https://undp-nature.exposure.co/from-dust-to-water",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-18",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, Rissa Edoo, and Otgonsuren Avirmed.Photos: Ganbayar Urtnasan/SGP Mongolia",
+   "collections": [
+    "landscapes",
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T17:30:09.521Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/srgas98uyjgzhg54etn0dgznr7pgxhwytv83/original.jpg",
+   "alt": "A man in a checked shirt and head cloth crouches to tend plants in a green field of eggplant bushes.",
+   "storyId": "bdundp/small-grants-big-resilience",
+   "storyTitle": "Small Grants              Big Resilience",
+   "storyUrl": "https://bdundp.exposure.co/small-grants-big-resilience",
+   "office": "UNDP Bangladesh",
+   "location": "Bangladesh",
+   "region": "RBAP",
+   "date": "2026-09-02",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "nature-sustainability",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T17:29:45.672Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/wnzgvaiwqhhl3hsknk3umj51zptnhaadck2i/original.jpg",
+   "alt": "A man in a coral t-shirt holds a handful of green chilies while standing in a field of leafy green plants.",
+   "storyId": "bdundp/small-grants-big-resilience",
+   "storyTitle": "Small Grants              Big Resilience",
+   "storyUrl": "https://bdundp.exposure.co/small-grants-big-resilience",
+   "office": "UNDP Bangladesh",
+   "location": "Bangladesh",
+   "region": "RBAP",
+   "date": "2026-09-02",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T17:29:33.805Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/ci8futs6gdjhgox1310f7mggfgofhr4aql67/original.jpg",
+   "alt": "A smiling woman in a red patterned dress and yellow headscarf holds a white duck in front of a corrugated wall.",
+   "storyId": "bdundp/small-grants-big-resilience",
+   "storyTitle": "Small Grants              Big Resilience",
+   "storyUrl": "https://bdundp.exposure.co/small-grants-big-resilience",
+   "office": "UNDP Bangladesh",
+   "location": "Bangladesh",
+   "region": "RBAP",
+   "date": "2026-09-02",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods",
+    "gender-equality"
+   ],
+   "addedAt": "2026-11-13T17:29:21.250Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/643f8n54e979y8xc9mbocc0albcj522h0sbg/original.jpeg",
+   "alt": "A woman in a floral dress walks under a pink umbrella across cracked, dried-out ground.",
+   "storyId": "bdundp/small-grants-big-resilience",
+   "storyTitle": "Small Grants              Big Resilience",
+   "storyUrl": "https://bdundp.exposure.co/small-grants-big-resilience",
+   "office": "UNDP Bangladesh",
+   "location": "Bangladesh",
+   "region": "RBAP",
+   "date": "2026-09-02",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T17:29:04.336Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/w7ojrdhy2p91ak6ipnhifvhzp0zfustakgmw/original.jpg",
+   "alt": "Woman in a maroon headscarf standing in the open doorway of a rusty freight car, holding out colorful quilts draped over the threshold.",
+   "storyId": "bdundp/small-grants-big-resilience",
+   "storyTitle": "Small Grants              Big Resilience",
+   "storyUrl": "https://bdundp.exposure.co/small-grants-big-resilience",
+   "office": "UNDP Bangladesh",
+   "location": "Bangladesh",
+   "region": "RBAP",
+   "date": "2026-09-02",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "photos-of-the-year",
+    "gender-equality"
+   ],
+   "addedAt": "2026-11-13T17:28:55.343Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/96uaazogudtgov4us96twvo0nvd7nap5b05k/original.jpg",
+   "alt": "A smiling woman with a white flower in her hair stands in green foliage, holding the straps of a woven basket on her back.",
+   "storyId": "bdundp/her-voice-her-future",
+   "storyTitle": "Her Voice Her Future",
+   "storyUrl": "https://bdundp.exposure.co/her-voice-her-future",
+   "office": "UNDP Bangladesh",
+   "location": "Bangladesh",
+   "region": "RBAP",
+   "date": "2026-09-05",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "photos-of-the-year",
+    "livelihoods",
+    "gender-equality"
+   ],
+   "addedAt": "2026-11-13T17:27:59.546Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/nhb8w63fepv6yrx2bctxke53xrgrf1lxkrtk/original.jpg",
+   "alt": "Smiling girls in yellow and blue football jerseys walk together on a field, one waving, with spectators behind them.",
+   "storyId": "bdundp/her-voice-her-future",
+   "storyTitle": "Her Voice Her Future",
+   "storyUrl": "https://bdundp.exposure.co/her-voice-her-future",
+   "office": "UNDP Bangladesh",
+   "location": "Bangladesh",
+   "region": "RBAP",
+   "date": "2026-09-05",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "gender-equality",
+    "education"
+   ],
+   "addedAt": "2026-11-13T17:27:50.410Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/wwjsf381vgbfic2132qdewv5h4nnv7xxpuqx/original.jpg",
+   "alt": "A smiling young woman in a blue headwrap and red skirt picks beans from a leafy green plant.",
+   "storyId": "bdundp/her-voice-her-future",
+   "storyTitle": "Her Voice Her Future",
+   "storyUrl": "https://bdundp.exposure.co/her-voice-her-future",
+   "office": "UNDP Bangladesh",
+   "location": "Bangladesh",
+   "region": "RBAP",
+   "date": "2026-09-05",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "gender-equality"
+   ],
+   "addedAt": "2026-11-13T17:27:33.520Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/reqdbb7w5lzg6ywhkepfhe0mqcwqbv8jmmol/original.jpg",
+   "alt": "A smiling woman in a pink and blue patterned top lifts a young child in a yellow floral dress, with green leaves behind them.",
+   "storyId": "bdundp/her-voice-her-future",
+   "storyTitle": "Her Voice Her Future",
+   "storyUrl": "https://bdundp.exposure.co/her-voice-her-future",
+   "office": "UNDP Bangladesh",
+   "location": "Bangladesh",
+   "region": "RBAP",
+   "date": "2026-09-05",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "gender-equality"
+   ],
+   "addedAt": "2026-11-13T17:27:22.209Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/6eVdBDILuGBhRh2H7sbHdajcG9coezv5BtiSCIUFHpY/original.jpg",
+   "alt": "A man in a camouflage bucket hat and dark t-shirt holds a bundle of dried garlic beside a large pile of garlic.",
+   "storyId": "undpmoldova/how-ezilier-can-transform-seasonal-work-in-moldova",
+   "storyTitle": "How e-Zilier can transform seasonal work in Moldova",
+   "storyUrl": "https://undpmoldova.exposure.co/how-ezilier-can-transform-seasonal-work-in-moldova",
+   "office": "UNDP Moldova",
+   "location": "Moldova",
+   "region": "RBEC",
+   "date": "2026-09-14",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods",
+    "portraits"
+   ],
+   "addedAt": "2026-11-13T17:25:46.472Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/weftef9cqo4037yb7jc5a54j2skbpfo8nb7f/original.jpg",
+   "alt": "A young boy in a red t-shirt holds a teal basin between rows of green tomato plants in a greenhouse, with a smiling woman behind him.",
+   "storyId": "undparabic/germany-and-undp-building-resilience-and-supporting-recovery-across-the-arab-states",
+   "storyTitle": "Germany and UNDP: Building resilience and supporting recovery across the Arab States",
+   "storyUrl": "https://undparabic.exposure.co/germany-and-undp-building-resilience-and-supporting-recovery-across-the-arab-states",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-09-21",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "nature-sustainability",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T17:24:46.561Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/oxaha7pw2fsbvrrdlpfyzfyaegv2jmnf83i9/original.jpg",
+   "alt": "A smiling boy in a blue plaid shirt holds up a glass of clear water outdoors, with a dry, dusty hillside behind him.",
+   "storyId": "undparabic/germany-and-undp-building-resilience-and-supporting-recovery-across-the-arab-states",
+   "storyTitle": "Germany and UNDP: Building resilience and supporting recovery across the Arab States",
+   "storyUrl": "https://undparabic.exposure.co/germany-and-undp-building-resilience-and-supporting-recovery-across-the-arab-states",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-09-21",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "water"
+   ],
+   "addedAt": "2026-11-13T17:24:31.177Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/juc5z77hventh0so3s23cr47hbntwo4n2urv/original.jpg",
+   "alt": "Woman in colorful embroidered purple blouse, red woven skirt and red headwrap, standing on a stone plaza before grey steps.",
+   "storyId": "pnudguatemala/mujeres-rurales-capacidades-para-decidir-y-avanzar",
+   "storyTitle": "Mujeres rurales, capacidades para decidir y avanzar",
+   "storyUrl": "https://pnudguatemala.exposure.co/mujeres-rurales-capacidades-para-decidir-y-avanzar",
+   "office": "PNUD Guatemala",
+   "location": "Guatemala",
+   "region": "RBLAC",
+   "date": "2026-10-09",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "indigenous-knowledge",
+    "gender-equality"
+   ],
+   "addedAt": "2026-11-13T17:23:40.462Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/wOiKLWzyu3naaTYQRjzGAwafduX71R5pnyLH69rNZLo/original.jpg",
+   "alt": "A boy in a wheelchair sits at a wooden desk in a classroom, with classmates writing behind him.",
+   "storyId": "undpmoldova/now-i-can-get-on-the-school-bus-by-myself-without-help",
+   "storyTitle": "“Now I can get on the school bus by myself, without help”",
+   "storyUrl": "https://undpmoldova.exposure.co/now-i-can-get-on-the-school-bus-by-myself-without-help",
+   "office": "UNDP Moldova",
+   "location": "Moldova",
+   "region": "RBEC",
+   "date": "2026-10-12",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "disabilities",
+    "education"
+   ],
+   "addedAt": "2026-11-13T17:23:07.350Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/h8kx4akkzbtgdgu9d6ez3yy627hrlxjod3r9/original.jpg",
+   "alt": "A man wearing a khaki shirt and cap stands in a forest, looking off to the side. Binoculars hang from a harness around his chest. He has a focused expression.",
+   "caption": "Photo: SGP Colombia",
+   "storyId": "undp-nature/from-hunters-to-guardians",
+   "storyTitle": "From Hunters to Guardians",
+   "storyUrl": "https://undp-nature.exposure.co/from-hunters-to-guardians",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-02-25",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T17:21:35.857Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/gl0aajtvp1xy0q2v79fclp71qcwetevgxblb/original.jpg",
+   "alt": "Three men in long robes load a wooden crate in a warehouse doorway, one bent low to lift it.",
+   "caption": "Medical supplies being loaded at the National Medical Supply Fund warehouse in Port Sudan, which was been supported by UNDP and the Global Fund with IT systems, solar power and refrigerated trucks for drug deliveries.",
+   "storyId": "undpsudan/delivering-medical-supplies",
+   "storyTitle": "Life-saving medical supplies for embattled South Kordofan, one of Sudan’s hardest-to-reach places",
+   "storyUrl": "https://undpsudan.exposure.co/delivering-medical-supplies",
+   "office": "UNDP Sudan",
+   "location": "Sudan",
+   "region": "RBAS",
+   "date": "2026-02-25",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "health"
+   ],
+   "addedAt": "2026-11-13T17:20:50.408Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/3ju6iwfk6jxo9dhhf1o8sajjamf3rlvp2wya/original.jpg",
+   "alt": "Smiling woman in a green headscarf and pink top sits beside a table of white medicine bottles and blister packs.",
+   "storyId": "undparabic/women-leading-through-crisis-advancing-justice-and-dignity-in-the-arab-states-region",
+   "storyTitle": "Women Leading Through Crisis: Advancing Justice and Dignity in the Arab States Region",
+   "storyUrl": "https://undparabic.exposure.co/women-leading-through-crisis-advancing-justice-and-dignity-in-the-arab-states-region",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-03-08",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "gender-equality"
+   ],
+   "addedAt": "2026-11-13T17:20:35.655Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/no6holyrd4ixbfddtpxyx4h4l81qpyquydr6/original.jpg",
+   "alt": "A smiling woman in a floral head wrap and dress stands with a wooden walking stick in a green field under a blue sky.",
+   "storyId": "undparabic/women-leading-through-crisis-advancing-justice-and-dignity-in-the-arab-states-region",
+   "storyTitle": "Women Leading Through Crisis: Advancing Justice and Dignity in the Arab States Region",
+   "storyUrl": "https://undparabic.exposure.co/women-leading-through-crisis-advancing-justice-and-dignity-in-the-arab-states-region",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-03-08",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "gender-equality"
+   ],
+   "addedAt": "2026-11-13T17:20:29.128Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/wk9dl0pgwke7divk35s2v1l8gcir2icbjdiw/original.JPG",
+   "alt": "Inside a damaged room with a pitted wall and open ceiling, a woman and a small child sit on a floral mat beside bedding and clothes.",
+   "storyId": "undparabic/women-leading-through-crisis-advancing-justice-and-dignity-in-the-arab-states-region",
+   "storyTitle": "Women Leading Through Crisis: Advancing Justice and Dignity in the Arab States Region",
+   "storyUrl": "https://undparabic.exposure.co/women-leading-through-crisis-advancing-justice-and-dignity-in-the-arab-states-region",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-03-08",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "displacement",
+    "crisis"
+   ],
+   "addedAt": "2026-11-13T17:20:06.358Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/fuflhm8j2hprb1k0ldnvab56b7rypj40sp48/original.jpg",
+   "alt": "A group of men gathers outside a damaged building. Several wear blue vests with the UNDP logo on the back. The men face each other in a circle. Overcast day.",
+   "storyId": "undpafghanistan/an-areabased-approach-to-development",
+   "storyTitle": "An Area-Based Approach to Development (BALKH)",
+   "storyUrl": "https://undpafghanistan.exposure.co/an-areabased-approach-to-development",
+   "office": "UNDP Afghanistan",
+   "location": "Afghanistan",
+   "region": "RBAP",
+   "date": "2026-03-31",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "undp-in-the-field"
+   ],
+   "addedAt": "2026-11-13T17:18:51.728Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/7kq1qrcwp32sc42mtimk0r5moo5lyr4j7w9f/original.jpg",
+   "alt": "A man in a blue UNDP vest walks away from the camera along a dirt path between rows of green onion plants.",
+   "caption": "In Gubarab village, on theÂ banks of the River Nile near Atbara, local farmers benefitÂ from a UNDP-supported Solar Water pump projectÂ that irrigates land for produce such as okra, oranges, and onions.",
+   "storyId": "undpsudan/beyond_conflict_report",
+   "storyTitle": "Sudan's war: the price a nation is paying",
+   "storyUrl": "https://undpsudan.exposure.co/beyond_conflict_report",
+   "office": "UNDP Sudan",
+   "location": "Sudan",
+   "region": "RBAS",
+   "date": "2026-04-14",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "undp-in-the-field"
+   ],
+   "addedAt": "2026-11-13T17:18:37.717Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/5okbptyzfrg206hr7ysy0nehxird86bjxrfi/original.jpg",
+   "alt": "A woman in a vivid orange and blue patterned robe and headwrap tends green plants in a garden beside a mud-brick wall.",
+   "caption": "In Al-Damar, River Nile State, a UNDP-supported ​'Home Gardening' project empowers women in agriculture and enterprise.",
+   "storyId": "undpsudan/beyond_conflict_report",
+   "storyTitle": "Sudan's war: the price a nation is paying",
+   "storyUrl": "https://undpsudan.exposure.co/beyond_conflict_report",
+   "office": "UNDP Sudan",
+   "location": "Sudan",
+   "region": "RBAS",
+   "date": "2026-04-14",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "gender-equality",
+    "displacement"
+   ],
+   "addedAt": "2026-11-13T17:18:16.581Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/ivsu5ughkue9qeit7a62salsoa1uciqtfp5g/original.jpg",
+   "alt": "A woman in a long blue embroidered dress and green head wrap stands in a dusty camp, with laundry hung on a line and white tents behind her.",
+   "storyId": "undpsudan/beyond_conflict_report",
+   "storyTitle": "Sudan's war: the price a nation is paying",
+   "storyUrl": "https://undpsudan.exposure.co/beyond_conflict_report",
+   "office": "UNDP Sudan",
+   "location": "Sudan",
+   "region": "RBAS",
+   "date": "2026-04-14",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "displacement"
+   ],
+   "addedAt": "2026-11-13T17:18:07.267Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/qdpqkkuiwgk480t7e0i0myorhrywwrjor5bd/original.jpg",
+   "alt": "Women in colorful wraps sit and stand under a metal-roofed shelter on dusty ground, with tents and two tall minarets in the distance.",
+   "caption": "At a former bus station turned IDP settlement, the sprawling site hosts some 6,600 IDPs who arrived in Gedaref during the third wave of mass displacement from the Sinjar/Sannar region south of Khartoum in July of 2024.",
+   "storyId": "undpsudan/beyond_conflict_report",
+   "storyTitle": "Sudan's war: the price a nation is paying",
+   "storyUrl": "https://undpsudan.exposure.co/beyond_conflict_report",
+   "office": "UNDP Sudan",
+   "location": "Sudan",
+   "region": "RBAS",
+   "date": "2026-04-14",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "displacement"
+   ],
+   "addedAt": "2026-11-13T17:17:56.061Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/efi734krx6ux14c0lo78sxunaxm0wc5owu48/original.jpg",
+   "alt": "A man in a white robe holds a bunch of harvested onions in a green crop field under a hazy sky.",
+   "caption": "Solar power has the potential to reduce hunger across Sudan by helping farmers boost yields and open up new areas for growing food.",
+   "storyId": "undpsudan/solar-power-report",
+   "storyTitle": "When the grid goes dark, sunlight can power farms, clinics and schools",
+   "storyUrl": "https://undpsudan.exposure.co/solar-power-report",
+   "office": "UNDP Sudan",
+   "location": "Sudan",
+   "region": "RBAS",
+   "date": "2026-05-18",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-13T17:16:15.885Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/ce0txt8hc5uo7e3x2ehucplgx4gabsxjfobv/original.jpg",
+   "alt": "Man in traditional attire stares forward. He wears a shell headband, beaded necklaces, and woven bag. Dark skin, white beard, against dark green foliage.",
+   "caption": "Andrew Taraha.",
+   "storyId": "undp-nature/an-ancestral-legacy",
+   "storyTitle": "An Ancestral Legacy",
+   "storyUrl": "https://undp-nature.exposure.co/an-ancestral-legacy",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-05-19",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, Rissa Edoo, Teiba Mamu and Andrew Taraha. Header photo: SGP/UNDP Solomon Islands. Photos: SGP/UNDP Solomon Islands and Takataka Eco Village Conservation Foundati",
+   "collections": [
+    "portraits",
+    "indigenous-knowledge"
+   ],
+   "addedAt": "2026-11-13T17:15:51.194Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/dyws1gmichctxzwpkcg3dcsg5iv92mksmo9x/original.jpg",
+   "alt": "A man with a graying beard stands in a forest, wearing traditional tribal attire. He has a shell headband and multiple strands of orange beaded necklaces. He wears a serious expression.",
+   "caption": "Andrew Taraha in the ancestral lands of the Kira tribe in Are`Are, Solomon Islands.",
+   "storyId": "undp-nature/an-ancestral-legacy",
+   "storyTitle": "An Ancestral Legacy",
+   "storyUrl": "https://undp-nature.exposure.co/an-ancestral-legacy",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-05-19",
+   "year": "2026",
+   "credits": "Story by Ana Canestrelli, Andrea Egan, Rissa Edoo, Teiba Mamu and Andrew Taraha. Header photo: SGP/UNDP Solomon Islands. Photos: SGP/UNDP Solomon Islands and Takataka Eco Village Conservation Foundati",
+   "collections": [
+    "indigenous-knowledge"
+   ],
+   "addedAt": "2026-11-13T17:15:18.710Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/pgewsbt9iq9t5krhzmcatahxchry9qn8zvx7/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/the-power-of-the-pacific",
+   "storyTitle": "The Power of the Pacific",
+   "storyUrl": "https://undp-nature.exposure.co/the-power-of-the-pacific",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-06-07",
+   "year": "2026",
+   "credits": "Text by: Peter Griffin, Andrea Egan, Lisa Buchanan and Ugyen Dorji. Header photo: FFA",
+   "collections": [
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T17:14:10.587Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/l0x823y6lh59vw1rmqgf2e6cp1cwzljwelzl/original.jpg",
+   "alt": "An adult elephant and calf walk through a shallow stream in a dry, grassy landscape. The stream reflects the sky, and a small mountain rises in the distance.",
+   "caption": "Elephants, Samburu National Reserve, Kenya. Photo: Gregoire Dubois",
+   "storyId": "undp-nature/forest-health-human-health",
+   "storyTitle": "Forest Health. Human Health.",
+   "storyUrl": "https://undp-nature.exposure.co/forest-health-human-health",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-04-20",
+   "year": "2026",
+   "credits": "Text by: Nancy Chege, Anna Lisa Jose, Andrea Egan. Header photo: Ogiek Peoples' community members in Kenya. Photo: Ogiek Peoples' Development Progam for UNDP Kenya",
+   "collections": [
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T17:03:05.727Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/bpqsusd1ijvg9og102vb3kigxp2tncw2jar8/original.jpg",
+   "alt": "A Maasai woman stands among cattle in a fenced enclosure. She wears a red plaid shawl and holds a blue container. A calf stands near her and a large acacia tree is in the background.",
+   "storyId": "undp-nature/forest-health-human-health",
+   "storyTitle": "Forest Health. Human Health.",
+   "storyUrl": "https://undp-nature.exposure.co/forest-health-human-health",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-04-20",
+   "year": "2026",
+   "credits": "Text by: Nancy Chege, Anna Lisa Jose, Andrea Egan. Header photo: Ogiek Peoples' community members in Kenya. Photo: Ogiek Peoples' Development Progam for UNDP Kenya",
+   "collections": [
+    "nature-sustainability",
+    "indigenous-knowledge"
+   ],
+   "addedAt": "2026-11-13T17:02:36.894Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/0vxHu8BXDsLnAd5OCOaBonW5VlHCThdcQ1kdb6ip5qA/original.jpg",
+   "alt": "A man in a dark cap and navy clothes sits in a white wheelchair on a concrete yard beside a wooden fence.",
+   "storyId": "undpukraine/i-knew-i-needed-more-than-just-to-get-around",
+   "storyTitle": "‘I knew I needed more than just to get around’",
+   "storyUrl": "https://undpukraine.exposure.co/i-knew-i-needed-more-than-just-to-get-around",
+   "office": "UNDP Ukraine",
+   "location": "Ukraine",
+   "region": "RBEC",
+   "date": "2026-04-17",
+   "year": "2026",
+   "credits": "Photo credit: UNDP Ukraine / Yuliia Pedorenko",
+   "collections": [
+    "disabilities"
+   ],
+   "addedAt": "2026-11-13T17:01:58.683Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/duZrvT2sxOdJuQI8vtFnvkCc6jHqC6dCEJ6bUTLxxXA/original.jpg",
+   "alt": "A man in a wheelchair sits on a paved path between a yellow brick house and a white gate.",
+   "storyId": "undpukraine/i-knew-i-needed-more-than-just-to-get-around",
+   "storyTitle": "‘I knew I needed more than just to get around’",
+   "storyUrl": "https://undpukraine.exposure.co/i-knew-i-needed-more-than-just-to-get-around",
+   "office": "UNDP Ukraine",
+   "location": "Ukraine",
+   "region": "RBEC",
+   "date": "2026-04-17",
+   "year": "2026",
+   "credits": "Photo credit: UNDP Ukraine / Yuliia Pedorenko",
+   "collections": [
+    "disabilities"
+   ],
+   "addedAt": "2026-11-13T17:01:54.590Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/7xpcxxkwf8h9k1caqb50kka7v16o8wn3n458/original.jpg",
+   "alt": "Smiling man holds a large fish. He wears a blue t-shirt, cap, and black shorts. Lush green foliage fills the background. The man appears proud of his catch.",
+   "caption": "The snakehead, locally known as ikan toman, is prized by anglers and remains culturally woven into life along the Kedah River Basin, anchoring traditional diets and recreational fishing. Photo by Orange Omengan/PEMSEA",
+   "storyId": "undp-nature/lifegiving-water-lifegiving-women",
+   "storyTitle": "Life-Giving Water, Life-Giving Women",
+   "storyUrl": "https://undp-nature.exposure.co/lifegiving-water-lifegiving-women",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-03-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits",
+    "livelihoods",
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T16:59:58.571Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/mrjigs7int38hlqlmykfv31a99rdqfoyvpzp/original.jpg",
+   "alt": "Five smiling people stand in front of a tree, posing for a photo. Behind them is a flooded area. The woman in the center wears a blue floral hijab. The men wear casual clothing, including branded shirts and hats.",
+   "caption": "Members of the Northern Region Fishing Association with the founders of Epol Tech Industries. Photo by Orange Omengan/PEMSEA",
+   "storyId": "undp-nature/lifegiving-water-lifegiving-women",
+   "storyTitle": "Life-Giving Water, Life-Giving Women",
+   "storyUrl": "https://undp-nature.exposure.co/lifegiving-water-lifegiving-women",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-03-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-13T16:59:51.454Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/yktu7dn6uwfmitp9of8clcipr3bltxvaq2y7/original.jpg",
+   "alt": "A man in a life vest uses a tool to clear water hyacinth from a boat on a river. Another man sits in the boat. Trees line the riverbank under a blue sky. The water reflects the sky and vegetation.",
+   "caption": "As part of LSANK’s ongoing initiatives, a river clean-up activity was carried out with the Northern Region Fishing Association on 30 January 2026. Photo courtesy of LSANK, Malaysia",
+   "storyId": "undp-nature/lifegiving-water-lifegiving-women",
+   "storyTitle": "Life-Giving Water, Life-Giving Women",
+   "storyUrl": "https://undp-nature.exposure.co/lifegiving-water-lifegiving-women",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-03-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T16:59:24.071Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/ku6vo0ymm8ewcx8cqovljsb0qnxcz2i0mkds/original.jpg",
+   "alt": "Person pilots small motorboat on a wide river, heading away from the viewer. Lush green trees and palms line both sides of the river under a clear blue sky.",
+   "caption": "The Kedah River flowing through Alor Setar, Malaysia. Photo courtesy of LSANK, Malaysia",
+   "storyId": "undp-nature/lifegiving-water-lifegiving-women",
+   "storyTitle": "Life-Giving Water, Life-Giving Women",
+   "storyUrl": "https://undp-nature.exposure.co/lifegiving-water-lifegiving-women",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-03-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "nature-planet"
+   ],
+   "addedAt": "2026-11-13T16:58:47.186Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/vil4gqfb96o9vh81ykv9kgt3ep5671hvtzld/original.jpg",
+   "alt": "Smiling woman in blue floral hijab stands near a pond. Green trees and cloudy sky in background.",
+   "caption": "Zanariyan Binti Azizan of Epol Tech Industries. Photo by Orange Omengan/PEMSEA",
+   "storyId": "undp-nature/lifegiving-water-lifegiving-women",
+   "storyTitle": "Life-Giving Water, Life-Giving Women",
+   "storyUrl": "https://undp-nature.exposure.co/lifegiving-water-lifegiving-women",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-03-20",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-13T16:58:37.046Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/Zbc4n5gA7xEQIFGPlJBLz9kYDvuXpu8K3zJQ4HDD10o/original.jpeg",
+   "alt": "A man in a dark coat walks between rusted railway tracks beside a weathered freight car and a small white metal cabin.",
+   "storyId": "undpukraine/our-people-dont-need-convincing-that-mine-safety-training-matters",
+   "storyTitle": "“Our people don’t need convincing that mine safety training matters”",
+   "storyUrl": "https://undpukraine.exposure.co/our-people-dont-need-convincing-that-mine-safety-training-matters",
+   "office": "UNDP Ukraine",
+   "location": "Ukraine",
+   "region": "RBEC",
+   "date": "2026-03-12",
+   "year": "2026",
+   "credits": "Photo credit: Danylo Pavlov / UNDP in Ukraine",
+   "collections": [
+    "crisis",
+    "photos-of-the-year"
+   ],
+   "addedAt": "2026-11-13T16:57:53.491Z"
+  },
   {
    "src": "https://exposure.accelerator.net/production/photos/8ldr10ai6jw0blxle5n0i8psl08ys1w9u85o/original.jpg",
    "alt": "",
