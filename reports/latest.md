@@ -1,6 +1,6 @@
 # Collection report
 
-Updated: 2026-11-13T14:40:07+00:00
+Updated: 2026-11-13T14:45:10+00:00
 
 - Accounts checked: 34
 - Stories in archive: 2301
@@ -15,7 +15,7 @@ Updated: 2026-11-13T14:40:07+00:00
 |---|---|---|---|---|---|---|
 | [UNDP Afghanistan](https://undpafghanistan.exposure.co/) | ok | 54 | 8 | 46 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Arab States](https://undparabic.exposure.co/) | ok | 114 | 8 | 106 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Bangladesh](https://bdundp.exposure.co/) | ok | 4 | 3 | 1 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Bangladesh](https://bdundp.exposure.co/) | ok | 4 | 3 | 1 | 1 |  |
 | [UNDP Bhutan](https://undp-bhutan.exposure.co/) | ok | 43 | 0 | 43 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [PNUD Bolivia](https://pnudbolivia.exposure.co/) | ok | 40 | 0 | 40 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Cambodia](https://undpcambodia.exposure.co/) | ok | 59 | 0 | 59 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; nbsp-1: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
