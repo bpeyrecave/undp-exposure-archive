@@ -51,6 +51,9 @@
   li .meta { font-family: "DM Mono", monospace; font-size: 11px; color: var(--muted); white-space: nowrap; }
   li.done a { color: var(--ok); text-decoration: line-through; }
   li.done .meta { color: var(--ok); }
+  .outdated { display: none; border: 1px solid var(--accent); background: rgba(255, 225, 126, 0.08); padding: 14px 16px;
+    margin-bottom: 28px; color: var(--foreground); line-height: 1.5; }
+  .outdated strong { color: var(--accent); }
   .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--accent);
     color: var(--accent-foreground); padding: 12px 18px; font-weight: 600; font-size: 14px; display: none; max-width: 90vw; }
   code { font-family: "DM Mono", monospace; font-size: 13px; color: var(--accent); }
@@ -68,6 +71,12 @@
   <p>Exposure doesn't let the automatic collector open story pages, so most cards show only a cover photo.
     You can fill them in by hand: open a story in your own browser and click one button. Its photos are saved here,
     and you send them to the archive in batches.</p>
+
+  <div class="outdated" id="outdated" role="alert">
+    <strong>Your "+ Add to archive" button is out of date.</strong> The story was added, but older buttons miss
+    photo captions or pick up other stories' thumbnails. Delete the button from your bookmarks bar and drag the new one
+    from step 01 below. Stories already collected keep their photos.
+  </div>
 
   <section class="step">
     <h2><b>01</b>Add the button to your browser</h2>
@@ -108,6 +117,9 @@
 <script>
 (function () {
   var QUEUE_KEY = "undp-archive-manual-queue";
+  // Bump whenever bookmarkletSource changes, so outdated buttons get a warning.
+  // 1: original, 2: skips other stories' thumbnails, 3: captions, 4: this version check.
+  var BUTTON_VERSION = 4;
   var here = location.href.split("#")[0].split("?")[0];
 
   // --- Bookmarklet: runs on an Exposure story page in the visitor's own browser. ---
@@ -130,7 +142,7 @@
         "let cover=false;document.querySelectorAll('img').forEach(i=>{const s=i.currentSrc||i.src,a=i.alt||'';if(/^Read /.test(a)||(i.closest('a[href]')&&i.closest('a').pathname!==location.pathname))return;if(s.includes('/cover-photo/')){if(cover)return;cover=true}add(s,a)});" +
       "}" +
       "if(!photos.length){alert('No photos found on this page.');return}" +
-      "const data={url:location.origin.toLowerCase()+p,title:title.replace(/ [-\\u2013] .*$/,'').replace(/\\s+by .+ on Exposure$/,'').trim(),date,credits,photos,source:md?'md':'page',collectedAt:new Date().toISOString()};" +
+      "const data={v:" + BUTTON_VERSION + ",url:location.origin.toLowerCase()+p,title:title.replace(/ [-\\u2013] .*$/,'').replace(/\\s+by .+ on Exposure$/,'').trim(),date,credits,photos,source:md?'md':'page',collectedAt:new Date().toISOString()};" +
       "window.open(T+'#add='+encodeURIComponent(JSON.stringify(data)),'undp-archive-collector');" +
     "})()";
   }
@@ -157,6 +169,7 @@
       var data = JSON.parse(decodeURIComponent(location.hash.slice(5)));
       if (!data.url || !Array.isArray(data.photos)) throw new Error("bad data");
       queue[data.url] = data;
+      if ((data.v || 1) < BUTTON_VERSION) document.getElementById("outdated").style.display = "block";
       writeQueue(queue);
       toast("Added: " + data.title + " (" + data.photos.length + " photos)");
     } catch (e) {
