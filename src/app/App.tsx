@@ -168,7 +168,7 @@ function Archive() {
       <main id="archive" className={`mx-auto max-w-[1560px] px-5 sm:px-8 lg:px-12 ${curator ? "pb-40" : "pb-20"}`}>
         <div className="flex items-end gap-8 border-b border-border pt-6" role="tablist" aria-label="Archive views">
           <ViewTab label="Stories" count={stories.length} active={route.view === "stories"} onClick={() => go("")} />
-          <ViewTab label="Best photos" count={picks.picks.length} active={route.view === "picks"} onClick={() => go("#picks")} />
+          <ViewTab label="Best photos for social" count={picks.picks.length} active={route.view === "picks"} onClick={() => go("#picks")} />
         </div>
 
         {route.view === "picks" ? (

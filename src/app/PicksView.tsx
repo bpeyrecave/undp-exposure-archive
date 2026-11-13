@@ -31,7 +31,7 @@ export function PicksView({
         .sort((a, b) => b.addedAt.localeCompare(a.addedAt)),
     [picks, active, activeRegion],
   );
-  const heading = active ? `Best photos · ${active.name}` : "Best photos";
+  const heading = active ? `Best photos for social · ${active.name}` : "Best photos for social";
 
   return (
     <>
@@ -60,7 +60,7 @@ export function PicksView({
             <button
               type="button"
               onClick={() => {
-                if (confirm(`Delete the collection "${active.name}"? Its photos stay in Best photos.`)) {
+                if (confirm(`Delete the collection "${active.name}"? Its photos stay in Best photos for social.`)) {
                   removeCollection(active.id);
                   onSelectCollection(null);
                 }

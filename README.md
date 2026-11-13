@@ -61,9 +61,9 @@ lets a person fill in stories one at a time from their own browser:
 Captured stories are kept for good. The collector uses them whenever Exposure blocks the story page,
 and the report shows how many stories were collected by hand.
 
-## Best photos (editors' picks)
+## Best photos for social (editors' picks)
 
-The **Best photos** tab shows a curated selection of individual photos, grouped into collections
+The **Best photos for social** tab shows a curated selection of individual photos, grouped into collections
 (each collection has its own link, e.g. `…/undp-exposure-archive/#picks/climate-nature`).
 Visitors can browse, download and open the source story. Picks are stored in `public/data/picks.json`.
 
@@ -74,7 +74,7 @@ To curate:
    until you click **Exit** in the bar at the bottom.
 2. Open any story, and in the gallery click **Pick**. Tick the collections the photo belongs to, or type a
    new collection name and click **Add**. **Remove from picks** takes it out again. Collections can be deleted
-   with the × next to their name in the Best photos tab.
+   with the × next to their name in the Best photos for social tab.
 3. Your changes are a draft in your browser until published. Click **Download picks.json** in the curator bar,
    then upload the file to `public/data/` on GitHub (**Add file → Upload files**, it replaces the old one) and
    commit. The bar shows "everything published" once the site has updated.
