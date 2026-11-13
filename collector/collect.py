@@ -116,9 +116,11 @@ def parse_markdown(md):
         if src in seen or "/avatar/" in src:
             continue
         seen.add(src)
+        alt = clean_text(alt)
         photo = {"src": src, "alt": alt if alt and alt != "Photo" else ""}
-        if caption.strip():
-            photo["caption"] = caption.strip()
+        caption = clean_caption(caption)
+        if caption:
+            photo["caption"] = caption
         photos.append(photo)
     credits = None
     m = re.search(r"^.*\b(Photos?|Photography|Fotos?|Fotografías?|Crédits? photos?)\b[^\n]{0,200}$", md.split("## Footnotes")[-1], re.M | re.I)
@@ -191,12 +193,31 @@ def dedupe(stories, sources_by_account):
     return kept, dropped
 
 
+PLACEHOLDER_CAPTIONS = {"default", "screenshot", "image", "photo", "untitled", "caption"}
+
+
+def clean_text(text):
+    """Repair UTF-8 text that was decoded as Latin-1 (e.g. "Ð¡Ð¾Ñ..." -> "Соц..."), and trim it."""
+    text = (text or "").strip()
+    if re.search(r"[ÃÐÑØÙâ][\x80-\xbf]", text):
+        try:
+            text = text.encode("latin-1").decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            pass
+    return text
+
+
+def clean_caption(text):
+    text = clean_text(text)
+    return "" if text.lower() in PLACEHOLDER_CAPTIONS else text
+
+
 def clean_manual_photos(photos):
     """Keep the story's own photos: one cover, never the "Read ..." thumbnails of other stories."""
     kept, seen, cover_seen = [], set(), False
     for p in photos:
         src = base_image(p.get("src") or "")
-        alt = p.get("alt") or ""
+        alt = clean_text(p.get("alt"))
         if not src or src in seen or alt.startswith("Read "):
             continue
         if "/cover-photo/" in src:
@@ -205,8 +226,9 @@ def clean_manual_photos(photos):
             cover_seen = True
         seen.add(src)
         photo = {"src": src, "alt": "" if alt.endswith(" - cover photo") else alt}
-        if (p.get("caption") or "").strip():
-            photo["caption"] = p["caption"].strip()
+        caption = clean_caption(p.get("caption"))
+        if caption:
+            photo["caption"] = caption
         kept.append(photo)
     return kept
 
@@ -224,7 +246,7 @@ def load_manual():
             url = (e.get("url") or "").lower().rstrip("/")
             photos = clean_manual_photos(e.get("photos", []))
             captions.update({p["src"]: p["caption"] for p in photos if p.get("caption")})
-            title = re.sub(r"\s+by .+ on Exposure$", "", (e.get("title") or "").strip())
+            title = re.sub(r"\s+by .+ on Exposure$", "", clean_text(e.get("title")))
             if url and photos and e.get("collectedAt", "") >= manual.get(url, {}).get("collectedAt", ""):
                 manual[url] = {**e, "title": title or None, "photos": photos}
     # A newer capture made without captions (older button) keeps captions captured earlier.
