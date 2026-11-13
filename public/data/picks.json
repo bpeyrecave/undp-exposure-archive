@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T15:01:16.754Z",
+ "updated": "2026-11-13T15:08:19.243Z",
  "collections": [
   {
    "id": "portraits",
@@ -40,9 +40,369 @@
   {
    "id": "water",
    "name": "Water"
+  },
+  {
+   "id": "disabilities",
+   "name": "Disabilities"
   }
  ],
  "picks": [
+  {
+   "src": "https://exposure.accelerator.net/production/photos/8ldr10ai6jw0blxle5n0i8psl08ys1w9u85o/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/threads-of-change",
+   "storyTitle": "Threads of Change",
+   "storyUrl": "https://undp-nature.exposure.co/threads-of-change",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-10",
+   "year": "2026",
+   "credits": "Text by: Andrea Egan. Header photo: Goats in Bayangovi Aimag, Bajanhongor province. Photo: © Beniamino Pisati. All photos courtesy of Beniamino Pisati (www.beniaminopisati.com), unless otherwise noted",
+   "collections": [
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T15:08:02.870Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/gn1yvv283djt3yr8mtxh77bkwdfkwri1sism/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/threads-of-change",
+   "storyTitle": "Threads of Change",
+   "storyUrl": "https://undp-nature.exposure.co/threads-of-change",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-10",
+   "year": "2026",
+   "credits": "Text by: Andrea Egan. Header photo: Goats in Bayangovi Aimag, Bajanhongor province. Photo: © Beniamino Pisati. All photos courtesy of Beniamino Pisati (www.beniaminopisati.com), unless otherwise noted",
+   "collections": [
+    "portraits",
+    "livelihoods",
+    "photos-of-the-year"
+   ],
+   "addedAt": "2026-11-13T15:07:43.408Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/alsso5l1zv9dgsdl8oplc760xgllrdy5q0lx/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/threads-of-change",
+   "storyTitle": "Threads of Change",
+   "storyUrl": "https://undp-nature.exposure.co/threads-of-change",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-10",
+   "year": "2026",
+   "credits": "Text by: Andrea Egan. Header photo: Goats in Bayangovi Aimag, Bajanhongor province. Photo: © Beniamino Pisati. All photos courtesy of Beniamino Pisati (www.beniaminopisati.com), unless otherwise noted",
+   "collections": [
+    "photos-of-the-year",
+    "portraits"
+   ],
+   "addedAt": "2026-11-13T15:07:36.524Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/o9qbb96lkoc2cwpxeeo2h2m7o971fst4qwz7/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/threads-of-change",
+   "storyTitle": "Threads of Change",
+   "storyUrl": "https://undp-nature.exposure.co/threads-of-change",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-10",
+   "year": "2026",
+   "credits": "Text by: Andrea Egan. Header photo: Goats in Bayangovi Aimag, Bajanhongor province. Photo: © Beniamino Pisati. All photos courtesy of Beniamino Pisati (www.beniaminopisati.com), unless otherwise noted",
+   "collections": [
+    "portraits",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T15:07:29.429Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/h4wwvofxa0nkmcjejpu7yokc7bukxr8kgeph/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/threads-of-change",
+   "storyTitle": "Threads of Change",
+   "storyUrl": "https://undp-nature.exposure.co/threads-of-change",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-10",
+   "year": "2026",
+   "credits": "Text by: Andrea Egan. Header photo: Goats in Bayangovi Aimag, Bajanhongor province. Photo: © Beniamino Pisati. All photos courtesy of Beniamino Pisati (www.beniaminopisati.com), unless otherwise noted",
+   "collections": [
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T15:07:16.949Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/g14uu784wweb9hgx57dotyddbmkc92dttd86/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/threads-of-change",
+   "storyTitle": "Threads of Change",
+   "storyUrl": "https://undp-nature.exposure.co/threads-of-change",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-10",
+   "year": "2026",
+   "credits": "Text by: Andrea Egan. Header photo: Goats in Bayangovi Aimag, Bajanhongor province. Photo: © Beniamino Pisati. All photos courtesy of Beniamino Pisati (www.beniaminopisati.com), unless otherwise noted",
+   "collections": [
+    "photos-of-the-year",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T15:07:05.438Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/ct7cwg2xkj2ywh5tqswu5dlrn45qbgh8smyb/original.jpg",
+   "alt": "",
+   "storyId": "undp-nature/threads-of-change",
+   "storyTitle": "Threads of Change",
+   "storyUrl": "https://undp-nature.exposure.co/threads-of-change",
+   "office": "UNDP Planet",
+   "location": "Global",
+   "region": "GLOBAL",
+   "date": "2026-08-10",
+   "year": "2026",
+   "credits": "Text by: Andrea Egan. Header photo: Goats in Bayangovi Aimag, Bajanhongor province. Photo: © Beniamino Pisati. All photos courtesy of Beniamino Pisati (www.beniaminopisati.com), unless otherwise noted",
+   "collections": [
+    "portraits",
+    "photos-of-the-year"
+   ],
+   "addedAt": "2026-11-13T15:07:01.126Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/dj0xg5xq5yfpfi9mfg3pv31bmvs8xoyadf6h/original.jpg",
+   "alt": "An older man in a white robe and white cap holds a bundle of hand tools with curved blades against his chest, outdoors near mud-brick buildings.",
+   "storyId": "undpsudan/sudans-farms-could-feed-millions-not-reached-by-aid",
+   "storyTitle": "Sudan’s farms could feed millions not reached by aid",
+   "storyUrl": "https://undpsudan.exposure.co/sudans-farms-could-feed-millions-not-reached-by-aid",
+   "office": "UNDP Sudan",
+   "location": "Sudan",
+   "region": "RBAS",
+   "date": "2026-08-03",
+   "year": "2026",
+   "credits": "All photos (c) UNDP",
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-13T15:06:39.584Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/posts/4988927/cover-photo/cover-1779164201.jpg",
+   "alt": "",
+   "storyId": "undpsrilanka/the-dawn-of-justice",
+   "storyTitle": "The Dawn of Justice",
+   "storyUrl": "https://undpsrilanka.exposure.co/the-dawn-of-justice",
+   "office": "UNDP Sri Lanka",
+   "location": "Sri Lanka",
+   "region": "RBAP",
+   "date": "2026-05-19",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "disabilities"
+   ],
+   "addedAt": "2026-11-13T15:05:33.751Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/a8j26DyKdVuCWzBKWxjzb5FLxTpQGAdLFbddtauDsuo/original.jpg",
+   "alt": "A man in a dark cap and black shirt sits on a chair with a prosthetic leg, in a room with pink metal stairs and graffiti.",
+   "storyId": "undpukraine/you-know-you-are-doing-something-good",
+   "storyTitle": "‘You know you’re doing something good’",
+   "storyUrl": "https://undpukraine.exposure.co/you-know-you-are-doing-something-good",
+   "office": "UNDP Ukraine",
+   "location": "Ukraine",
+   "region": "RBEC",
+   "date": "2026-06-03",
+   "year": "2026",
+   "credits": "Photo: Svoe Kino / UNDP Ukraine",
+   "collections": [
+    "disabilities",
+    "portraits"
+   ],
+   "addedAt": "2026-11-13T15:05:00.522Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/c5fu6cwiudgqs2eeun3qeta3g7xkc4mtgy8z/original.jpg",
+   "alt": "A worn brown leather office chair sits in a dim, debris-strewn room, seen through a doorway.",
+   "storyId": "undpukraine/house-271",
+   "storyTitle": "When objects bear witness",
+   "storyUrl": "https://undpukraine.exposure.co/house-271",
+   "office": "UNDP Ukraine",
+   "location": "Ukraine",
+   "region": "RBEC",
+   "date": "2026-06-30",
+   "year": "2026",
+   "credits": "Photo: Christina Pashkina, Jeanne Dovhych, Virginie Nguyen Hoang",
+   "collections": [
+    "photos-of-the-year",
+    "crisis"
+   ],
+   "addedAt": "2026-11-13T15:04:19.557Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/lblohtb4vlv81kwhwlgrem10wuvwaod3987i/original.JPG",
+   "alt": "Tall concrete apartment block with its left side torn open and floors exposed, bare trees and other damaged buildings behind it under an overcast sky.",
+   "storyId": "undpukraine/house-271",
+   "storyTitle": "When objects bear witness",
+   "storyUrl": "https://undpukraine.exposure.co/house-271",
+   "office": "UNDP Ukraine",
+   "location": "Ukraine",
+   "region": "RBEC",
+   "date": "2026-06-30",
+   "year": "2026",
+   "credits": "Photo: Christina Pashkina, Jeanne Dovhych, Virginie Nguyen Hoang",
+   "collections": [
+    "crisis"
+   ],
+   "addedAt": "2026-11-13T15:04:08.836Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/5k2m1x95qx58d9505svbfb9asqo0dse8tnze/original.jpg",
+   "alt": "Smiling woman in a yellow shirt holding an open cacao pod with white pulp, standing among cacao trees.",
+   "storyId": "pnudcolombia/como-agua-para-chocolate",
+   "storyTitle": "Como agua para chocolate",
+   "storyUrl": "https://pnudcolombia.exposure.co/como-agua-para-chocolate",
+   "office": "PNUD Colombia",
+   "location": "Colombia",
+   "region": "RBLAC",
+   "date": "2026-07-07",
+   "year": "2026",
+   "credits": "Fotos Nadia Rey Cobos , PNUD.",
+   "collections": [
+    "portraits"
+   ],
+   "addedAt": "2026-11-13T15:03:20.660Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/t80egneu3czn4qgax8s7l8hoblpnoffyk2rg/original.JPG",
+   "alt": "Two men eat slices of red watermelon at an open-air market, with trucks and buildings behind them.",
+   "caption": "Customers enjoy the juicy watermelon. UNDP Yemen / 2026",
+   "storyId": "undpyemen/especrp-in-abyan",
+   "storyTitle": "The green cycle: How strong agricultural systems power food security in Yemen",
+   "storyUrl": "https://undpyemen.exposure.co/especrp-in-abyan",
+   "office": "UNDP Yemen",
+   "location": "Yemen",
+   "region": "RBAS",
+   "date": "2026-07-06",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T15:03:02.442Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/fut9fv1g638xwjham5xflpdk1ol2fx84obrp/original.jpg",
+   "alt": "Four people in straw hats walk single file along a dirt embankment through a green field, each carrying a large green bundle on their head.",
+   "storyId": "undpyemen/especrp-in-abyan",
+   "storyTitle": "The green cycle: How strong agricultural systems power food security in Yemen",
+   "storyUrl": "https://undpyemen.exposure.co/especrp-in-abyan",
+   "office": "UNDP Yemen",
+   "location": "Yemen",
+   "region": "RBAS",
+   "date": "2026-07-06",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods",
+    "photos-of-the-year"
+   ],
+   "addedAt": "2026-11-13T15:02:43.040Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/wdbysx0kn3f8lkx4ztvyvxxq7uniunj7crud/original.jpg",
+   "alt": "A worker in a straw hat and orange gloves stands in a pickup truck loaded with green watermelons, while another person lifts a melon up from the field.",
+   "storyId": "undpyemen/especrp-in-abyan",
+   "storyTitle": "The green cycle: How strong agricultural systems power food security in Yemen",
+   "storyUrl": "https://undpyemen.exposure.co/especrp-in-abyan",
+   "office": "UNDP Yemen",
+   "location": "Yemen",
+   "region": "RBAS",
+   "date": "2026-07-06",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods",
+    "photos-of-the-year"
+   ],
+   "addedAt": "2026-11-13T15:02:48.957Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/b6baks2rkrduobx3llc1ekvavi84sxzbmpz1/original.jpg",
+   "alt": "Two men in straw hats examine a bunch of green seedlings together outdoors, with leafy plants and vines behind them.",
+   "caption": "Abdughalib carefully inspects the seedlings with Abdullah, examining their quality and health before making the purchase. UNDP Yemen / 2026",
+   "storyId": "undpyemen/especrp-in-abyan",
+   "storyTitle": "The green cycle: How strong agricultural systems power food security in Yemen",
+   "storyUrl": "https://undpyemen.exposure.co/especrp-in-abyan",
+   "office": "UNDP Yemen",
+   "location": "Yemen",
+   "region": "RBAS",
+   "date": "2026-07-06",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T15:02:19.317Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/zpxyzbze51cg6egflwo3m9sjt6yseb592iu3/original.jpg",
+   "alt": "Three farmers in straw hats and yellow gloves kneel over spread-out red chili peppers, lifting them into woven baskets.",
+   "caption": "Farmers pour harvested peppers into the collection area for sorting. UNDP Yemen / 2026",
+   "storyId": "undpyemen/especrp-in-abyan",
+   "storyTitle": "The green cycle: How strong agricultural systems power food security in Yemen",
+   "storyUrl": "https://undpyemen.exposure.co/especrp-in-abyan",
+   "office": "UNDP Yemen",
+   "location": "Yemen",
+   "region": "RBAS",
+   "date": "2026-07-06",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "photos-of-the-year",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T15:02:09.574Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/photos/knrnu47ho6pyot0keauvru8agpexbxf5fnpc/original.jpg",
+   "alt": "Three farmers in straw hats carry woven baskets of red peppers through a green pepper field.",
+   "caption": "Farmers carry freshly harvested peppers to the collection area. UNDP Yemen / 2026",
+   "storyId": "undpyemen/especrp-in-abyan",
+   "storyTitle": "The green cycle: How strong agricultural systems power food security in Yemen",
+   "storyUrl": "https://undpyemen.exposure.co/especrp-in-abyan",
+   "office": "UNDP Yemen",
+   "location": "Yemen",
+   "region": "RBAS",
+   "date": "2026-07-06",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "photos-of-the-year",
+    "livelihoods"
+   ],
+   "addedAt": "2026-11-13T15:02:02.376Z"
+  },
+  {
+   "src": "https://exposure.accelerator.net/production/posts/4982745/cover-photo/cover-1767607730.jpg",
+   "alt": "",
+   "storyId": "undparabic/2025-in-review-delivering-in-gaza-through-crisis-and-loss",
+   "storyTitle": "2025 in review: Delivering in Gaza Through Crisis and Loss",
+   "storyUrl": "https://undparabic.exposure.co/2025-in-review-delivering-in-gaza-through-crisis-and-loss",
+   "office": "UNDP Arab States",
+   "location": "Arab States",
+   "region": "RBAS",
+   "date": "2026-01-05",
+   "year": "2026",
+   "credits": null,
+   "collections": [
+    "undp-in-the-field"
+   ],
+   "addedAt": "2026-11-13T15:01:23.412Z"
+  },
   {
    "src": "https://exposure.accelerator.net/production/posts/4994388/cover-photo/cover-1791190927.jpeg",
    "alt": "",
