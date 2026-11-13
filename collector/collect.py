@@ -213,7 +213,7 @@ def clean_manual_photos(photos):
 
 def load_manual():
     """Photo sets captured by hand (public/collect.html), newest capture of each story wins."""
-    manual = {}
+    manual, captions = {}, {}
     for f in sorted(MANUAL_DIR.glob("*.json")):
         try:
             entries = json.loads(f.read_text()).get("stories", [])
@@ -223,9 +223,15 @@ def load_manual():
         for e in entries:
             url = (e.get("url") or "").lower().rstrip("/")
             photos = clean_manual_photos(e.get("photos", []))
+            captions.update({p["src"]: p["caption"] for p in photos if p.get("caption")})
             title = re.sub(r"\s+by .+ on Exposure$", "", (e.get("title") or "").strip())
             if url and photos and e.get("collectedAt", "") >= manual.get(url, {}).get("collectedAt", ""):
                 manual[url] = {**e, "title": title or None, "photos": photos}
+    # A newer capture made without captions (older button) keeps captions captured earlier.
+    for entry in manual.values():
+        for photo in entry["photos"]:
+            if not photo.get("caption") and photo["src"] in captions:
+                photo["caption"] = captions[photo["src"]]
     return manual
 
 
