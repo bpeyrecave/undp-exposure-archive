@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-13T14:45:10+00:00",
+ "updated": "2026-11-13T14:55:25+00:00",
  "totals": {
   "accounts": 34,
   "stories": 2301,
-  "photos": 3413,
-  "fullPhotoSets": 77,
-  "coverOnly": 2224,
+  "photos": 4040,
+  "fullPhotoSets": 127,
+  "coverOnly": 2174,
   "duplicatesRemoved": 716,
-  "collectedByHand": 77
+  "collectedByHand": 127
  },
  "sites": [
   {
@@ -16,13 +16,13 @@
    "url": "https://undpafghanistan.exposure.co/",
    "status": "ok",
    "stories": 54,
-   "fullPhotoSets": 8,
-   "coverOnly": 46,
+   "fullPhotoSets": 10,
+   "coverOnly": 44,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 8
+   "manual": 10
   },
   {
    "account": "undparabic",
@@ -30,13 +30,13 @@
    "url": "https://undparabic.exposure.co/",
    "status": "ok",
    "stories": 114,
-   "fullPhotoSets": 8,
-   "coverOnly": 106,
+   "fullPhotoSets": 13,
+   "coverOnly": 101,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 8
+   "manual": 13
   },
   {
    "account": "bdundp",
@@ -56,12 +56,13 @@
    "url": "https://undp-bhutan.exposure.co/",
    "status": "ok",
    "stories": 43,
-   "fullPhotoSets": 0,
-   "coverOnly": 43,
+   "fullPhotoSets": 2,
+   "coverOnly": 41,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
-   ]
+   ],
+   "manual": 2
   },
   {
    "account": "pnudbolivia",
@@ -69,12 +70,13 @@
    "url": "https://pnudbolivia.exposure.co/",
    "status": "ok",
    "stories": 40,
-   "fullPhotoSets": 0,
-   "coverOnly": 40,
+   "fullPhotoSets": 1,
+   "coverOnly": 39,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
-   ]
+   ],
+   "manual": 1
   },
   {
    "account": "undpcambodia",
@@ -96,15 +98,15 @@
    "url": "https://undpinchina.exposure.co/",
    "status": "ok",
    "stories": 58,
-   "fullPhotoSets": 2,
-   "coverOnly": 56,
+   "fullPhotoSets": 3,
+   "coverOnly": 55,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.",
     "fostering-youth-participation-and-accelerating-breakthroughs-solutions-for-sdgs: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.",
     "youth-passion-for-action: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped."
    ],
-   "manual": 2
+   "manual": 3
   },
   {
    "account": "pnudcolombia",
@@ -112,13 +114,13 @@
    "url": "https://pnudcolombia.exposure.co/",
    "status": "ok",
    "stories": 239,
-   "fullPhotoSets": 5,
-   "coverOnly": 234,
+   "fullPhotoSets": 9,
+   "coverOnly": 230,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 5
+   "manual": 9
   },
   {
    "account": "undpdjibouti",
@@ -211,13 +213,13 @@
    "url": "https://undpkosovo.exposure.co/",
    "status": "ok",
    "stories": 141,
-   "fullPhotoSets": 1,
-   "coverOnly": 140,
+   "fullPhotoSets": 4,
+   "coverOnly": 137,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 1
+   "manual": 4
   },
   {
    "account": "undpmv",
@@ -336,13 +338,13 @@
    "url": "https://undpsrilanka.exposure.co/",
    "status": "ok",
    "stories": 244,
-   "fullPhotoSets": 13,
-   "coverOnly": 231,
+   "fullPhotoSets": 18,
+   "coverOnly": 226,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 13
+   "manual": 18
   },
   {
    "account": "undpsudan",
@@ -350,13 +352,13 @@
    "url": "https://undpsudan.exposure.co/",
    "status": "ok",
    "stories": 21,
-   "fullPhotoSets": 1,
-   "coverOnly": 20,
+   "fullPhotoSets": 3,
+   "coverOnly": 18,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 1
+   "manual": 3
   },
   {
    "account": "undpturkiye",
@@ -364,13 +366,13 @@
    "url": "https://undpturkiye.exposure.co/",
    "status": "ok",
    "stories": 232,
-   "fullPhotoSets": 1,
-   "coverOnly": 231,
+   "fullPhotoSets": 2,
+   "coverOnly": 230,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 1
+   "manual": 2
   },
   {
    "account": "undpukraine",
@@ -378,13 +380,13 @@
    "url": "https://undpukraine.exposure.co/",
    "status": "ok",
    "stories": 257,
-   "fullPhotoSets": 6,
-   "coverOnly": 251,
+   "fullPhotoSets": 20,
+   "coverOnly": 237,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 6
+   "manual": 20
   },
   {
    "account": "undpyemen",
@@ -392,13 +394,14 @@
    "url": "https://undpyemen.exposure.co/",
    "status": "ok",
    "stories": 95,
-   "fullPhotoSets": 0,
-   "coverOnly": 95,
+   "fullPhotoSets": 2,
+   "coverOnly": 93,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.",
     "yemeni-grapes-ar: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped."
-   ]
+   ],
+   "manual": 2
   },
   {
    "account": "undpinzambia",
@@ -406,13 +409,13 @@
    "url": "https://undpinzambia.exposure.co/",
    "status": "ok",
    "stories": 30,
-   "fullPhotoSets": 5,
-   "coverOnly": 25,
+   "fullPhotoSets": 6,
+   "coverOnly": 24,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 5
+   "manual": 6
   },
   {
    "account": "undpasiapac",
@@ -461,13 +464,13 @@
    "url": "https://undp-nature.exposure.co/",
    "status": "ok",
    "stories": 329,
-   "fullPhotoSets": 6,
-   "coverOnly": 323,
+   "fullPhotoSets": 13,
+   "coverOnly": 316,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 6
+   "manual": 13
   },
   {
    "account": "undpacceleratorlabs",
