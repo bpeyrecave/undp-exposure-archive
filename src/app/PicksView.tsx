@@ -133,12 +133,7 @@ function PickCard({ pick, onOpen }: { pick: Pick; onOpen: () => void }) {
         decoding="async"
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-black/10 opacity-30 transition-opacity duration-500 group-hover:opacity-100 group-focus-within:opacity-100" />
-
-      <div className="absolute left-4 top-4 flex items-center gap-2 font-proxima-condensed text-[11px] font-bold uppercase tracking-[0.14em] text-white">
-        <span className="bg-accent px-2 py-0.5 text-accent-foreground font-extrabold">{pick.region}</span>
-        <span className="drop-shadow-md font-semibold tracking-[0.12em]">{formatDate(pick.date)}</span>
-      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-black/10 opacity-30 transition-opacity duration-500 md:opacity-0 group-hover:opacity-100 group-focus-within:opacity-100" />
 
       <div className="absolute right-4 top-4 z-20 flex gap-1.5 md:translate-y-2 md:opacity-0 md:transition-all md:duration-300 md:group-hover:translate-y-0 md:group-hover:opacity-100 md:group-focus-within:translate-y-0 md:group-focus-within:opacity-100">
         <button
@@ -167,7 +162,12 @@ function PickCard({ pick, onOpen }: { pick: Pick; onOpen: () => void }) {
         </a>
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 p-4 text-white">
+      {/* Text appears on hover only (always shown on touch screens, which have no hover). */}
+      <div className="absolute inset-x-0 bottom-0 p-4 text-white transition-all duration-300 ease-out md:translate-y-2 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 md:group-focus-within:translate-y-0 md:group-focus-within:opacity-100">
+        <div className="mb-2 flex items-center gap-2 font-proxima-condensed text-[11px] font-bold uppercase tracking-[0.14em]">
+          <span className="bg-accent px-2 py-0.5 text-accent-foreground font-extrabold">{pick.region === "GLOBAL" ? "Global" : pick.region}</span>
+          <span className="drop-shadow-md font-semibold tracking-[0.12em]">{formatDate(pick.date)}</span>
+        </div>
         <p className="mb-1 font-proxima-condensed text-[11px] font-bold uppercase tracking-[0.16em] text-white/80 drop-shadow">
           {pick.office} · {pick.location}
         </p>
