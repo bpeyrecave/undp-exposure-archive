@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-16T12:50:55+00:00",
+ "updated": "2026-11-17T13:31:57+00:00",
  "totals": {
   "accounts": 34,
-  "stories": 2301,
-  "photos": 5362,
+  "stories": 2302,
+  "photos": 5363,
   "fullPhotoSets": 227,
-  "coverOnly": 2074,
+  "coverOnly": 2075,
   "duplicatesRemoved": 716,
   "collectedByHand": 227
  },
@@ -408,9 +408,9 @@
    "office": "UNDP Zambia",
    "url": "https://undpinzambia.exposure.co/",
    "status": "ok",
-   "stories": 30,
+   "stories": 31,
    "fullPhotoSets": 7,
-   "coverOnly": 23,
+   "coverOnly": 24,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
