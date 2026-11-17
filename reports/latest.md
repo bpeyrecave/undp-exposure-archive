@@ -1,12 +1,12 @@
 # Collection report
 
-Updated: 2026-11-17T13:31:57+00:00
+Updated: 2026-11-17T13:59:30+00:00
 
 - Accounts checked: 34
 - Stories in archive: 2302
-- Photos in archive: 5363
-- Stories with their full photo set: 227 (collected by hand: 227)
-- Stories with cover photo only (story page not accessible): 2075
+- Photos in archive: 5415
+- Stories with their full photo set: 228 (collected by hand: 228)
+- Stories with cover photo only (story page not accessible): 2074
 - Translations / duplicates removed: 716
 
 ## Accounts
@@ -41,7 +41,7 @@ Updated: 2026-11-17T13:31:57+00:00
 | [UNDP Türkiye](https://undpturkiye.exposure.co/) | ok | 232 | 4 | 228 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Ukraine](https://undpukraine.exposure.co/) | ok | 257 | 38 | 219 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Yemen](https://undpyemen.exposure.co/) | ok | 95 | 2 | 93 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; yemeni-grapes-ar: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
-| [UNDP Zambia](https://undpinzambia.exposure.co/) | ok | 31 | 7 | 24 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Zambia](https://undpinzambia.exposure.co/) | ok | 31 | 8 | 23 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Asia and the Pacific](https://undpasiapac.exposure.co/) | ok | 32 | 1 | 31 | 3 | world-tsunami-awareness-day-2025-preparedness-saves-lives: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; for-the-love-of-peat-and-peaks: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [PNUD América Latina y el Caribe](https://undplac.exposure.co/) | ok | 114 | 1 | 113 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Climate](https://undp-climate.exposure.co/) | ok | 340 | 0 | 340 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |

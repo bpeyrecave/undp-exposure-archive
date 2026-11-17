@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-17T13:31:57+00:00",
+ "updated": "2026-11-17T13:59:30+00:00",
  "totals": {
   "accounts": 34,
   "stories": 2302,
-  "photos": 5363,
-  "fullPhotoSets": 227,
-  "coverOnly": 2075,
+  "photos": 5415,
+  "fullPhotoSets": 228,
+  "coverOnly": 2074,
   "duplicatesRemoved": 716,
-  "collectedByHand": 227
+  "collectedByHand": 228
  },
  "sites": [
   {
@@ -409,13 +409,13 @@
    "url": "https://undpinzambia.exposure.co/",
    "status": "ok",
    "stories": 31,
-   "fullPhotoSets": 7,
-   "coverOnly": 24,
+   "fullPhotoSets": 8,
+   "coverOnly": 23,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
    ],
-   "manual": 7
+   "manual": 8
   },
   {
    "account": "undpasiapac",
