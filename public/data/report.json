@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-17T13:59:30+00:00",
+ "updated": "2026-11-18T13:09:06+00:00",
  "totals": {
   "accounts": 34,
-  "stories": 2302,
-  "photos": 5415,
+  "stories": 2303,
+  "photos": 5416,
   "fullPhotoSets": 228,
-  "coverOnly": 2074,
+  "coverOnly": 2075,
   "duplicatesRemoved": 716,
   "collectedByHand": 228
  },
@@ -97,9 +97,9 @@
    "office": "UNDP China",
    "url": "https://undpinchina.exposure.co/",
    "status": "ok",
-   "stories": 58,
+   "stories": 59,
    "fullPhotoSets": 4,
-   "coverOnly": 54,
+   "coverOnly": 55,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.",

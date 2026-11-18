@@ -1,12 +1,12 @@
 # Collection report
 
-Updated: 2026-11-17T13:59:30+00:00
+Updated: 2026-11-18T13:09:06+00:00
 
 - Accounts checked: 34
-- Stories in archive: 2302
-- Photos in archive: 5415
+- Stories in archive: 2303
+- Photos in archive: 5416
 - Stories with their full photo set: 228 (collected by hand: 228)
-- Stories with cover photo only (story page not accessible): 2074
+- Stories with cover photo only (story page not accessible): 2075
 - Translations / duplicates removed: 716
 
 ## Accounts
@@ -19,7 +19,7 @@ Updated: 2026-11-17T13:59:30+00:00
 | [UNDP Bhutan](https://undp-bhutan.exposure.co/) | ok | 43 | 3 | 40 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [PNUD Bolivia](https://pnudbolivia.exposure.co/) | ok | 40 | 4 | 36 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Cambodia](https://undpcambodia.exposure.co/) | ok | 59 | 0 | 59 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; nbsp-1: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
-| [UNDP China](https://undpinchina.exposure.co/) | ok | 58 | 4 | 54 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; fostering-youth-participation-and-accelerating-breakthroughs-solutions-for-sdgs: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; youth-passion-for-action: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
+| [UNDP China](https://undpinchina.exposure.co/) | ok | 59 | 4 | 55 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; fostering-youth-participation-and-accelerating-breakthroughs-solutions-for-sdgs: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; youth-passion-for-action: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [PNUD Colombia](https://pnudcolombia.exposure.co/) | ok | 239 | 15 | 224 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Djibouti](https://undpdjibouti.exposure.co/) | ok | 4 | 0 | 4 | 3 | women-real-drivers-of-resilience-and-economic-recovery: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; les-femmes-moteurs-de-la-resilience-et-du-relevement-economique: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [PNUD El Salvador](https://pnudsv.exposure.co/) | ok | 7 | 2 | 5 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
