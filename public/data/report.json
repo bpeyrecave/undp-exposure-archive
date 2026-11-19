@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-18T13:09:06+00:00",
+ "updated": "2026-11-19T13:18:42+00:00",
  "totals": {
   "accounts": 34,
-  "stories": 2303,
-  "photos": 5416,
+  "stories": 2304,
+  "photos": 5417,
   "fullPhotoSets": 228,
-  "coverOnly": 2075,
-  "duplicatesRemoved": 716,
+  "coverOnly": 2076,
+  "duplicatesRemoved": 717,
   "collectedByHand": 228
  },
  "sites": [
@@ -379,9 +379,9 @@
    "office": "UNDP Ukraine",
    "url": "https://undpukraine.exposure.co/",
    "status": "ok",
-   "stories": 257,
+   "stories": 259,
    "fullPhotoSets": 38,
-   "coverOnly": 219,
+   "coverOnly": 221,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -2276,6 +2276,12 @@
    "title": "#GivingTuesday ETKİNLİĞİ",
    "url": "https://undpturkiye.exposure.co/givingtuesday-1",
    "keptInstead": "https://undpturkiye.exposure.co/givingtuesday"
+  },
+  {
+   "id": "undpukraine/vony-dlia-nas-heroi-bez-zbroi",
+   "title": "«Вони для нас — герої без зброї»",
+   "url": "https://undpukraine.exposure.co/vony-dlia-nas-heroi-bez-zbroi",
+   "keptInstead": "https://undpukraine.exposure.co/they-are-heroes-without-weapons-for-us"
   },
   {
    "id": "undpukraine/derevo-zhyttia",
