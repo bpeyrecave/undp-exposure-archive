@@ -1,19 +1,19 @@
 # Collection report
 
-Updated: 2026-11-21T12:44:48+00:00
+Updated: 2026-11-22T12:40:21+00:00
 
 - Accounts checked: 34
-- Stories in archive: 2304
-- Photos in archive: 5417
+- Stories in archive: 2305
+- Photos in archive: 5418
 - Stories with their full photo set: 228 (collected by hand: 228)
-- Stories with cover photo only (story page not accessible): 2076
+- Stories with cover photo only (story page not accessible): 2077
 - Translations / duplicates removed: 717
 
 ## Accounts
 
 | Account | Status | Stories | Full photo sets | Cover only | Blocked pages | Notes |
 |---|---|---|---|---|---|---|
-| [UNDP Afghanistan](https://undpafghanistan.exposure.co/) | ok | 54 | 14 | 40 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Afghanistan](https://undpafghanistan.exposure.co/) | ok | 55 | 14 | 41 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Arab States](https://undparabic.exposure.co/) | ok | 114 | 17 | 97 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Bangladesh](https://bdundp.exposure.co/) | ok | 4 | 4 | 0 | 0 |  |
 | [UNDP Bhutan](https://undp-bhutan.exposure.co/) | ok | 43 | 3 | 40 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |

@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-21T12:44:48+00:00",
+ "updated": "2026-11-22T12:40:21+00:00",
  "totals": {
   "accounts": 34,
-  "stories": 2304,
-  "photos": 5417,
+  "stories": 2305,
+  "photos": 5418,
   "fullPhotoSets": 228,
-  "coverOnly": 2076,
+  "coverOnly": 2077,
   "duplicatesRemoved": 717,
   "collectedByHand": 228
  },
@@ -15,9 +15,9 @@
    "office": "UNDP Afghanistan",
    "url": "https://undpafghanistan.exposure.co/",
    "status": "ok",
-   "stories": 54,
+   "stories": 55,
    "fullPhotoSets": 14,
-   "coverOnly": 40,
+   "coverOnly": 41,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
