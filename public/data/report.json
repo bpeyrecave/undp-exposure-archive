@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-22T12:40:21+00:00",
+ "updated": "2026-11-23T14:45:56+00:00",
  "totals": {
   "accounts": 34,
-  "stories": 2305,
-  "photos": 5418,
+  "stories": 2306,
+  "photos": 5419,
   "fullPhotoSets": 228,
-  "coverOnly": 2077,
-  "duplicatesRemoved": 717,
+  "coverOnly": 2078,
+  "duplicatesRemoved": 718,
   "collectedByHand": 228
  },
  "sites": [
@@ -268,9 +268,9 @@
    "office": "UNDP Moldova",
    "url": "https://undpmoldova.exposure.co/",
    "status": "ok",
-   "stories": 116,
+   "stories": 118,
    "fullPhotoSets": 7,
-   "coverOnly": 109,
+   "coverOnly": 111,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -1298,6 +1298,12 @@
    "title": "зеленые технологии и органическое земледелие - путь к  пищевой безопасности  Казахстана",
    "url": "https://undpkaz.exposure.co/post-297402",
    "keptInstead": "https://undpkaz.exposure.co/green-technologies-organic-farming-a-way-to-food-safety-in-kazakhstan"
+  },
+  {
+   "id": "undpmoldova/mai-multa-caldura-mai-puine-griji",
+   "title": "Mai multă căldură, mai puține griji",
+   "url": "https://undpmoldova.exposure.co/mai-multa-caldura-mai-puine-griji",
+   "keptInstead": "https://undpmoldova.exposure.co/more-warmth-fewer-worries"
   },
   {
    "id": "undpmoldova/strugurii-o-misiune-posibila",

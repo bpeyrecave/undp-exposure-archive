@@ -1,13 +1,13 @@
 # Collection report
 
-Updated: 2026-11-22T12:40:21+00:00
+Updated: 2026-11-23T14:45:56+00:00
 
 - Accounts checked: 34
-- Stories in archive: 2305
-- Photos in archive: 5418
+- Stories in archive: 2306
+- Photos in archive: 5419
 - Stories with their full photo set: 228 (collected by hand: 228)
-- Stories with cover photo only (story page not accessible): 2077
-- Translations / duplicates removed: 717
+- Stories with cover photo only (story page not accessible): 2078
+- Translations / duplicates removed: 718
 
 ## Accounts
 
@@ -31,7 +31,7 @@ Updated: 2026-11-22T12:40:21+00:00
 | [UNDP Maldives](https://undpmv.exposure.co/) | ok | 26 | 0 | 26 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; a-journey-towards-safer-secure-islands: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [PNUD Mali](https://pnudmali.exposure.co/) | ok | 15 | 1 | 14 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Mauritius & Seychelles](https://undpmauritiusandseychelles.exposure.co/) | ok | 7 | 1 | 6 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Moldova](https://undpmoldova.exposure.co/) | ok | 116 | 7 | 109 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Moldova](https://undpmoldova.exposure.co/) | ok | 118 | 7 | 111 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Nepal](https://undpnepal.exposure.co/) | ok | 58 | 1 | 57 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Pakistan](https://undp-pakistan.exposure.co/) | ok | 86 | 4 | 82 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [PNUD Perú](https://pnudperu.exposure.co/) | no public stories | 0 | 0 | 0 | 0 | The site's sitemap lists no stories (they may be unlisted, reachable only by direct link). |
@@ -187,6 +187,7 @@ Updated: 2026-11-22T12:40:21+00:00
 | [СУПЕР-МАМА ИЛИ КАК УМЕТЬ ВСЕ УСПЕВАТЬ](https://undpkaz.exposure.co/post-354221) | https://undpkaz.exposure.co/super-mom-or-how-to-handle-everything |
 | [Хранительница Алтая: Вера Климова](https://undpkaz.exposure.co/post-299344) | https://undpkaz.exposure.co/the-guardian-of-altai-vera-klimova |
 | [зеленые технологии и органическое земледелие - путь к  пищевой безопасности  Казахстана](https://undpkaz.exposure.co/post-297402) | https://undpkaz.exposure.co/green-technologies-organic-farming-a-way-to-food-safety-in-kazakhstan |
+| [Mai multă căldură, mai puține griji](https://undpmoldova.exposure.co/mai-multa-caldura-mai-puine-griji) | https://undpmoldova.exposure.co/more-warmth-fewer-worries |
 | [Strugurii – o „misiune posibilă”](https://undpmoldova.exposure.co/strugurii-o-misiune-posibila) | https://undpmoldova.exposure.co/grapes-a-mission-possible |
 | [Sezonul culesului „nucii verzi”](https://undpmoldova.exposure.co/sezonul-culesului-nucii-verzi) | https://undpmoldova.exposure.co/green-walnut-harvest-season |
 | [„Acum urc singur, fără ajutor”](https://undpmoldova.exposure.co/acum-urc-singur-fara-ajutor) | https://undpmoldova.exposure.co/now-i-can-get-on-the-school-bus-by-myself-without-help |
