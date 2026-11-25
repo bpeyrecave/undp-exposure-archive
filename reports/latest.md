@@ -1,13 +1,13 @@
 # Collection report
 
-Updated: 2026-11-24T14:56:53+00:00
+Updated: 2026-11-25T14:30:15+00:00
 
 - Accounts checked: 34
-- Stories in archive: 2306
-- Photos in archive: 5419
+- Stories in archive: 2307
+- Photos in archive: 5420
 - Stories with their full photo set: 228 (collected by hand: 228)
-- Stories with cover photo only (story page not accessible): 2078
-- Translations / duplicates removed: 718
+- Stories with cover photo only (story page not accessible): 2079
+- Translations / duplicates removed: 719
 
 ## Accounts
 
@@ -39,7 +39,7 @@ Updated: 2026-11-24T14:56:53+00:00
 | [UNDP Sri Lanka](https://undpsrilanka.exposure.co/) | ok | 244 | 23 | 221 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Sudan](https://undpsudan.exposure.co/) | ok | 21 | 7 | 14 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Türkiye](https://undpturkiye.exposure.co/) | ok | 232 | 4 | 228 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Ukraine](https://undpukraine.exposure.co/) | ok | 259 | 38 | 221 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Ukraine](https://undpukraine.exposure.co/) | ok | 261 | 38 | 223 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Yemen](https://undpyemen.exposure.co/) | ok | 95 | 2 | 93 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; yemeni-grapes-ar: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [UNDP Zambia](https://undpinzambia.exposure.co/) | ok | 31 | 8 | 23 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Asia and the Pacific](https://undpasiapac.exposure.co/) | ok | 32 | 1 | 31 | 3 | world-tsunami-awareness-day-2025-preparedness-saves-lives: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; for-the-love-of-peat-and-peaks: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
@@ -351,6 +351,7 @@ Updated: 2026-11-24T14:56:53+00:00
 | [GERÇEK HAZİNEYİ KORUMAK](https://undpturkiye.exposure.co/gercek-hazineyi-korumak) | https://undpturkiye.exposure.co/guarding-the-real-treasure |
 | [İYİMSERLİĞİ SÜRDÜRMEK: BİR ENTEGRASYON ÖYKÜSÜ](https://undpturkiye.exposure.co/iyimserligi-suerduermek-bir-entegrasyon-oeykuesue) | https://undpturkiye.exposure.co/holding-optimism-a-story-of-integration |
 | [#GivingTuesday ETKİNLİĞİ](https://undpturkiye.exposure.co/givingtuesday-1) | https://undpturkiye.exposure.co/givingtuesday |
+| [«Їдемо до тих, хто найуразливіший»](https://undpukraine.exposure.co/yidemo-do-tykh-khto-naiurazlyvishyi) | https://undpukraine.exposure.co/we-go-to-those-who-are-the-most-vulnerable |
 | [«Вони для нас — герої без зброї»](https://undpukraine.exposure.co/vony-dlia-nas-heroi-bez-zbroi) | https://undpukraine.exposure.co/they-are-heroes-without-weapons-for-us |
 | [Дерево життя](https://undpukraine.exposure.co/derevo-zhyttia) | https://undpukraine.exposure.co/tree-of-life |
 | [«Хочу дати молоді відчуття безпеки і водночас — віри в себе»](https://undpukraine.exposure.co/hochu-daty-molodi-vidschuttia-bezteky-i-viry-v-sebe) | https://undpukraine.exposure.co/i-want-to-give-young-people-a-sense-of-safety-and-faith-in-themselves |

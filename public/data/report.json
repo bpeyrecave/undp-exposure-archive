@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24T14:56:53+00:00",
+ "updated": "2026-11-25T14:30:15+00:00",
  "totals": {
   "accounts": 34,
-  "stories": 2306,
-  "photos": 5419,
+  "stories": 2307,
+  "photos": 5420,
   "fullPhotoSets": 228,
-  "coverOnly": 2078,
-  "duplicatesRemoved": 718,
+  "coverOnly": 2079,
+  "duplicatesRemoved": 719,
   "collectedByHand": 228
  },
  "sites": [
@@ -379,9 +379,9 @@
    "office": "UNDP Ukraine",
    "url": "https://undpukraine.exposure.co/",
    "status": "ok",
-   "stories": 259,
+   "stories": 261,
    "fullPhotoSets": 38,
-   "coverOnly": 221,
+   "coverOnly": 223,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -2282,6 +2282,12 @@
    "title": "#GivingTuesday ETKİNLİĞİ",
    "url": "https://undpturkiye.exposure.co/givingtuesday-1",
    "keptInstead": "https://undpturkiye.exposure.co/givingtuesday"
+  },
+  {
+   "id": "undpukraine/yidemo-do-tykh-khto-naiurazlyvishyi",
+   "title": "«Їдемо до тих, хто найуразливіший»",
+   "url": "https://undpukraine.exposure.co/yidemo-do-tykh-khto-naiurazlyvishyi",
+   "keptInstead": "https://undpukraine.exposure.co/we-go-to-those-who-are-the-most-vulnerable"
   },
   {
    "id": "undpukraine/vony-dlia-nas-heroi-bez-zbroi",
