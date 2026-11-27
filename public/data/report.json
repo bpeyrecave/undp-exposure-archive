@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-26T13:59:03+00:00",
+ "updated": "2026-11-27T13:57:23+00:00",
  "totals": {
   "accounts": 34,
-  "stories": 2307,
-  "photos": 5420,
+  "stories": 2309,
+  "photos": 5422,
   "fullPhotoSets": 228,
-  "coverOnly": 2079,
-  "duplicatesRemoved": 719,
+  "coverOnly": 2081,
+  "duplicatesRemoved": 720,
   "collectedByHand": 228
  },
  "sites": [
@@ -212,9 +212,9 @@
    "office": "UNDP Kosovo",
    "url": "https://undpkosovo.exposure.co/",
    "status": "ok",
-   "stories": 141,
+   "stories": 142,
    "fullPhotoSets": 7,
-   "coverOnly": 134,
+   "coverOnly": 135,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -379,9 +379,9 @@
    "office": "UNDP Ukraine",
    "url": "https://undpukraine.exposure.co/",
    "status": "ok",
-   "stories": 261,
+   "stories": 263,
    "fullPhotoSets": 38,
-   "coverOnly": 223,
+   "coverOnly": 225,
    "blockedPages": 3,
    "notes": [
     "Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts."
@@ -2282,6 +2282,12 @@
    "title": "#GivingTuesday ETKİNLİĞİ",
    "url": "https://undpturkiye.exposure.co/givingtuesday-1",
    "keptInstead": "https://undpturkiye.exposure.co/givingtuesday"
+  },
+  {
+   "id": "undpukraine/my-vysadyly-lozy-tam-de-shche-donedavna-buly-miny",
+   "title": "«Ми висадили лози там, де ще донедавна були міни»",
+   "url": "https://undpukraine.exposure.co/my-vysadyly-lozy-tam-de-shche-donedavna-buly-miny",
+   "keptInstead": "https://undpukraine.exposure.co/we-planted-vines-where-there-were-mines-not-long-ago"
   },
   {
    "id": "undpukraine/yidemo-do-tykh-khto-naiurazlyvishyi",

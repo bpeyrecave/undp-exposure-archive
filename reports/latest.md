@@ -1,13 +1,13 @@
 # Collection report
 
-Updated: 2026-11-26T13:59:03+00:00
+Updated: 2026-11-27T13:57:23+00:00
 
 - Accounts checked: 34
-- Stories in archive: 2307
-- Photos in archive: 5420
+- Stories in archive: 2309
+- Photos in archive: 5422
 - Stories with their full photo set: 228 (collected by hand: 228)
-- Stories with cover photo only (story page not accessible): 2079
-- Translations / duplicates removed: 719
+- Stories with cover photo only (story page not accessible): 2081
+- Translations / duplicates removed: 720
 
 ## Accounts
 
@@ -27,7 +27,7 @@ Updated: 2026-11-26T13:59:03+00:00
 | [PNUD Guatemala](https://pnudguatemala.exposure.co/) | ok | 58 | 7 | 51 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP India](https://undp-india.exposure.co/) | ok | 31 | 0 | 31 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; breaking-free-women-champions-end-manual-scavenging: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; caring-for-indias-infants-reducing-child-mortality: no photos found, skipped. |
 | [UNDP Kazakhstan](https://undpkaz.exposure.co/) | ok | 65 | 0 | 65 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Kosovo](https://undpkosovo.exposure.co/) | ok | 141 | 7 | 134 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Kosovo](https://undpkosovo.exposure.co/) | ok | 142 | 7 | 135 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Maldives](https://undpmv.exposure.co/) | ok | 26 | 0 | 26 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; a-journey-towards-safer-secure-islands: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [PNUD Mali](https://pnudmali.exposure.co/) | ok | 15 | 1 | 14 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Mauritius & Seychelles](https://undpmauritiusandseychelles.exposure.co/) | ok | 7 | 1 | 6 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
@@ -39,7 +39,7 @@ Updated: 2026-11-26T13:59:03+00:00
 | [UNDP Sri Lanka](https://undpsrilanka.exposure.co/) | ok | 244 | 23 | 221 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Sudan](https://undpsudan.exposure.co/) | ok | 21 | 7 | 14 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Türkiye](https://undpturkiye.exposure.co/) | ok | 232 | 4 | 228 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
-| [UNDP Ukraine](https://undpukraine.exposure.co/) | ok | 261 | 38 | 223 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
+| [UNDP Ukraine](https://undpukraine.exposure.co/) | ok | 263 | 38 | 225 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Yemen](https://undpyemen.exposure.co/) | ok | 95 | 2 | 93 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; yemeni-grapes-ar: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
 | [UNDP Zambia](https://undpinzambia.exposure.co/) | ok | 31 | 8 | 23 | 3 | Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts. |
 | [UNDP Asia and the Pacific](https://undpasiapac.exposure.co/) | ok | 32 | 1 | 31 | 3 | world-tsunami-awareness-day-2025-preparedness-saves-lives: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped.; Story pages blocked for automated access (HTTP 403); stopped trying after 3 attempts.; for-the-love-of-peat-and-peaks: cover photo missing on Exposure (HTTP Error 404: Not Found), skipped. |
@@ -351,6 +351,7 @@ Updated: 2026-11-26T13:59:03+00:00
 | [GERÇEK HAZİNEYİ KORUMAK](https://undpturkiye.exposure.co/gercek-hazineyi-korumak) | https://undpturkiye.exposure.co/guarding-the-real-treasure |
 | [İYİMSERLİĞİ SÜRDÜRMEK: BİR ENTEGRASYON ÖYKÜSÜ](https://undpturkiye.exposure.co/iyimserligi-suerduermek-bir-entegrasyon-oeykuesue) | https://undpturkiye.exposure.co/holding-optimism-a-story-of-integration |
 | [#GivingTuesday ETKİNLİĞİ](https://undpturkiye.exposure.co/givingtuesday-1) | https://undpturkiye.exposure.co/givingtuesday |
+| [«Ми висадили лози там, де ще донедавна були міни»](https://undpukraine.exposure.co/my-vysadyly-lozy-tam-de-shche-donedavna-buly-miny) | https://undpukraine.exposure.co/we-planted-vines-where-there-were-mines-not-long-ago |
 | [«Їдемо до тих, хто найуразливіший»](https://undpukraine.exposure.co/yidemo-do-tykh-khto-naiurazlyvishyi) | https://undpukraine.exposure.co/we-go-to-those-who-are-the-most-vulnerable |
 | [«Вони для нас — герої без зброї»](https://undpukraine.exposure.co/vony-dlia-nas-heroi-bez-zbroi) | https://undpukraine.exposure.co/they-are-heroes-without-weapons-for-us |
 | [Дерево життя](https://undpukraine.exposure.co/derevo-zhyttia) | https://undpukraine.exposure.co/tree-of-life |
